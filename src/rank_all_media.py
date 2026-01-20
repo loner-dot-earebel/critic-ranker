@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 
 # Placeholder fetch functions
 # These will just load sample data for now
