@@ -29,6 +29,9 @@ def filter_comedy(df):
 def main():
     import pandas as pd
 
+    # Make sure outputs folder exists
+    os.makedirs("outputs", exist_ok=True)
+
     # Create a small sample dataframe
     sample = pd.DataFrame([
         {"title": "Sample Movie", "medium": "movie", "critic_score": 95, "genres": "Comedy"},
