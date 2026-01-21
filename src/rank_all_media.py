@@ -1,52 +1,73 @@
-import pandas as pd
 import os
+import csv
+import requests
+import pandas as pd
 
-# Placeholder fetch functions
-# These will just load sample data for now
-def fetch_movies_tv():
-    return pd.DataFrame(columns=["title", "medium", "critic_score", "genres"])
+OMDB_API_KEY = os.getenv("OMDB_API_KEY")
 
-def fetch_games():
-    return pd.DataFrame(columns=["title", "medium", "critic_score", "genres"])
+SEED_FILE = "src/seeds/movies_tv.csv"
+OUTPUT_ALL = "outputs/critics_all_media_ranked.csv"
+OUTPUT_COMEDY = "outputs/critics_comedy_humor_ranked.csv"
 
-def fetch_music():
-    return pd.DataFrame(columns=["title", "medium", "critic_score", "genres"])
 
-def fetch_podcasts():
-    return pd.DataFrame(columns=["title", "medium", "critic_score", "genres"])
+def fetch_omdb(title, media_type, year_hint=None):
+    params = {
+        "apikey": OMDB_API_KEY,
+        "t": title,
+        "type": "series" if media_type == "series" else "movie",
+        "r": "json"
+    }
+    if year_hint:
+        params["y"] = year_hint
 
-def fetch_books():
-    return pd.DataFrame(columns=["title", "medium", "critic_score", "genres"])
+    r = requests.get("https://www.omdbapi.com/", params=params, timeout=10)
+    data = r.json()
 
-def normalize_all_media(df):
-    df["score_norm"] = 50  # placeholder
-    df["percentile"] = 50
-    df["composite_score"] = 50
-    return df
+    if data.get("Response") != "True":
+        return None
 
-def filter_comedy(df):
-    return df[df["genres"].str.contains("comedy|humor", case=False, na=False)]
+    metacritic = data.get("Metascore")
+    if metacritic in (None, "N/A"):
+        return None
+
+    return {
+        "title": data.get("Title"),
+        "medium": media_type,
+        "year": data.get("Year"),
+        "critic_score": int(metacritic),
+        "genres": data.get("Genre", "")
+    }
+
 
 def main():
-    import pandas as pd
-
-    # Make sure outputs folder exists
     os.makedirs("outputs", exist_ok=True)
 
-    # Create a small sample dataframe
-    sample = pd.DataFrame([
-        {"title": "Sample Movie", "medium": "movie", "critic_score": 95, "genres": "Comedy"},
-        {"title": "Sample Game", "medium": "game", "critic_score": 90, "genres": "Adventure"},
-        {"title": "Sample Podcast", "medium": "podcast", "critic_score": 85, "genres": "Comedy"},
-        {"title": "Sample Book", "medium": "book", "critic_score": 80, "genres": "Satire"},
-    ])
+    rows = []
 
-    # Save the "all media" list
-    sample.to_csv("outputs/critics_all_media_ranked.csv", index=False)
+    with open(SEED_FILE, newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            result = fetch_omdb(
+                row["title"],
+                row["type"],
+                row.get("year_hint")
+            )
+            if result:
+                rows.append(result)
 
-    # Filter comedy/humor only
-    comedy = sample[sample["genres"].str.lower().str.contains("comedy|humor|satire")]
-    comedy.to_csv("outputs/critics_comedy_humor_ranked.csv", index=False)
+    df = pd.DataFrame(rows)
+
+    if df.empty:
+        return
+
+    df = df.sort_values("critic_score", ascending=False)
+
+    df.to_csv(OUTPUT_ALL, index=False)
+
+    comedy_mask = df["genres"].str.lower().str.contains(
+        "comedy|humor|satire", na=False
+    )
+    df[comedy_mask].to_csv(OUTPUT_COMEDY, index=False)
 
 
 if __name__ == "__main__":
