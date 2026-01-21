@@ -43,6 +43,8 @@ def fetch_omdb(title, media_type, year_hint=None):
 
 def main():
     print("=== ENTERED main() ===")
+    print("Seed file path:", SEED_FILE)
+    print("Seed file exists:", os.path.exists(SEED_FILE))
 
     os.makedirs("outputs", exist_ok=True)
 
@@ -50,7 +52,10 @@ def main():
 
     with open(SEED_FILE, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
-        for row in reader:
+        rows_in_seed = list(reader)
+        print("Rows in seed CSV:", len(rows_in_seed))
+
+        for row in rows_in_seed:
             result = fetch_omdb(
                 row["title"],
                 row["type"],
