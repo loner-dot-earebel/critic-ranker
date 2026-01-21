@@ -1,3 +1,5 @@
+print("=== rank_all_media.py STARTED ===")
+
 import os
 import csv
 import requests
@@ -40,6 +42,8 @@ def fetch_omdb(title, media_type, year_hint=None):
 
 
 def main():
+    print("=== ENTERED main() ===")
+
     os.makedirs("outputs", exist_ok=True)
 
     rows = []
