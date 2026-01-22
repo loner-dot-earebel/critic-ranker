@@ -16,7 +16,7 @@ def fetch_omdb(title, media_type, year_hint=None):
     params = {
         "apikey": OMDB_API_KEY,
         "t": title,
-        "type": "series" if media_type == "series" else "movie",
+        "type": "series" if media_type.lower() in ("tv", "series", "tv_series", "miniseries") else "movie",
         "r": "json"
     }
     if year_hint:
@@ -29,6 +29,8 @@ def fetch_omdb(title, media_type, year_hint=None):
         return None
 
     metacritic = data.get("Metascore")
+    critic_score = int(metacritic) if metacritic not in (None, "N/A") else None
+
     if metacritic in (None, "N/A"):
         return None
 
@@ -36,7 +38,7 @@ def fetch_omdb(title, media_type, year_hint=None):
         "title": data.get("Title"),
         "medium": media_type,
         "year": data.get("Year"),
-        "critic_score": int(metacritic),
+        "critic_score": critic_score,
         "genres": data.get("Genre", "")
     }
 
@@ -61,15 +63,28 @@ def main():
                 row["type"],
                 row.get("year_hint")
             )
-            if result:
+
+            if result is None:
+                print("OMDb miss:", row["title"], row["type"])
+            else:
                 rows.append(result)
+
 
     df = pd.DataFrame(rows)
 
     if df.empty:
+        print("No valid rows returned from OMDb")
+        return
+
+# Drop entries without a critic score
+    df = df.dropna(subset=["critic_score"])
+
+    if df.empty:
+        print("All rows missing Metacritic scores")
         return
 
     df = df.sort_values("critic_score", ascending=False)
+
 
     df.to_csv(OUTPUT_ALL, index=False)
 
