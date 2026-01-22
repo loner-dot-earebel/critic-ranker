@@ -31,8 +31,6 @@ def fetch_omdb(title, media_type, year_hint=None):
     metacritic = data.get("Metascore")
     critic_score = int(metacritic) if metacritic not in (None, "N/A") else None
 
-    if metacritic in (None, "N/A"):
-        return None
 
     return {
         "title": data.get("Title"),
@@ -65,9 +63,12 @@ def main():
             )
 
             if result is None:
-                print("OMDb miss:", row["title"], row["type"])
+                print("NOT FOUND:", row["title"])
             else:
+                if result["critic_score"] is None:
+                    print("FOUND, NO METASCORE:", result["title"])
                 rows.append(result)
+
 
 
     df = pd.DataFrame(rows)
