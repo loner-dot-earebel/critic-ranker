@@ -45,7 +45,7 @@ def main():
     print("=== ENTERED main() ===")
     print("Seed file path:", SEED_FILE)
     print("Seed file exists:", os.path.exists(SEED_FILE))
-
+    print("OMDB_API_KEY present:", bool(OMDB_API_KEY))
     os.makedirs("outputs", exist_ok=True)
 
     rows = []
