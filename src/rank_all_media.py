@@ -26,7 +26,9 @@ def fetch_omdb(title, media_type, year_hint=None):
     data = r.json()
 
     if data.get("Response") != "True":
+        print("OMDb ERROR for", title, ":", data.get("Error"))
         return None
+
 
     metacritic = data.get("Metascore")
     critic_score = int(metacritic) if metacritic not in (None, "N/A") else None
