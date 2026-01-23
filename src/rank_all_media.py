@@ -5,6 +5,12 @@ import csv
 import requests
 import pandas as pd
 
+import re
+
+def normalize_title(title):
+    return re.sub(r"\s*\(.*?\)", "", title).strip()
+
+
 OMDB_API_KEY = os.getenv("OMDB_API_KEY")
 
 SEED_FILE = "src/seeds/movies_tv.csv"
@@ -26,7 +32,12 @@ def fetch_omdb(title, media_type, year_hint=None):
     data = r.json()
 
     if data.get("Response") != "True":
-        print("OMDb ERROR for", title, ":", data.get("Error"))
+    # Retry without type constraint
+        params.pop("type", None)
+        r = requests.get("https://www.omdbapi.com/", params=params, timeout=10)
+        data = r.json()
+
+    if data.get("Response") != "True":
         return None
 
 
@@ -59,10 +70,10 @@ def main():
 
         for row in rows_in_seed:
             result = fetch_omdb(
-                row["title"],
+                normalize_title(row["title"]),
                 row["type"],
                 row.get("year_hint")
-            )
+            )    
 
             if result is None:
                 print("NOT FOUND:", row["title"])
