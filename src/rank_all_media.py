@@ -69,11 +69,15 @@ def main():
         print("Rows in seed CSV:", len(rows_in_seed))
 
         for row in rows_in_seed:
+            if row["type"] != "movie":
+                continue
+
             result = fetch_omdb(
                 normalize_title(row["title"]),
                 row["type"],
                 row.get("year_hint")
-            )    
+            )
+   
 
             if result is None:
                 print("NOT FOUND:", row["title"])
