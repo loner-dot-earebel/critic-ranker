@@ -79,12 +79,9 @@ def main():
             )
    
 
-            if result is None:
-                
-            else:
-                if result["critic_score"] is None:
+            
                     
-                rows.append(result)
+            rows.append(result)
 
 
 
