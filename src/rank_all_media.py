@@ -80,10 +80,10 @@ def main():
    
 
             if result is None:
-                print("NOT FOUND:", row["title"])
+                
             else:
                 if result["critic_score"] is None:
-                    print("FOUND, NO METASCORE:", result["title"])
+                    
                 rows.append(result)
 
 
