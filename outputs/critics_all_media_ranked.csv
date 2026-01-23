@@ -1,5 +1,36 @@
-title,medium,critic_score,genres
-Sample Movie,movie,95,Comedy
-Sample Game,game,90,Adventure
-Sample Podcast,podcast,85,Comedy
-Sample Book,book,80,Satire
+title,medium,year,critic_score,genres
+Citizen Kane,movie,1941,100.0,"Drama, Mystery"
+The Godfather,movie,1972,100.0,"Crime, Drama"
+Tokyo Story,movie,1953,100.0,Drama
+Lawrence of Arabia,movie,1962,100.0,"Adventure, Biography, Drama"
+Vertigo,movie,1958,100.0,"Mystery, Romance, Thriller"
+Rear Window,movie,1954,100.0,"Drama, Mystery, Thriller"
+Casablanca,movie,1942,100.0,"Drama, Romance, War"
+Singin' in the Rain,movie,1952,99.0,"Comedy, Musical, Romance"
+The Rules of the Game,movie,1939,99.0,"Comedy, Drama"
+Seven Samurai,movie,1954,98.0,"Action, Drama"
+Psycho,movie,1960,97.0,"Drama, Horror, Mystery"
+Parasite,movie,2019,97.0,"Drama, Thriller"
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,movie,1964,97.0,"Comedy, War"
+Modern Times,movie,1936,96.0,"Comedy, Drama, Romance"
+Spirited Away,movie,2001,96.0,"Animation, Adventure, Family"
+Schindler's List,movie,1993,95.0,"Biography, Drama, History"
+Pulp Fiction,movie,1994,95.0,"Crime, Drama"
+The Social Network,movie,2010,95.0,"Biography, Drama"
+Apocalypse Now,movie,1979,94.0,"Drama, Mystery, War"
+The Lord of the Rings: The Return of the King,movie,2003,94.0,"Adventure, Drama, Fantasy"
+There Will Be Blood,movie,2007,93.0,Drama
+Goodfellas,movie,1990,92.0,"Biography, Crime, Drama"
+No Country for Old Men,movie,2007,92.0,"Crime, Drama, Thriller"
+The Godfather Part II,movie,1974,90.0,"Crime, Drama"
+Raging Bull,movie,1980,90.0,"Biography, Drama, Sport"
+Star Wars: Episode IV - A New Hope,movie,1977,90.0,"Action, Adventure, Fantasy"
+Mad Max: Fury Road,movie,2015,90.0,"Action, Adventure, Sci-Fi"
+Mulholland Drive,movie,2001,87.0,"Drama, Mystery, Thriller"
+In the Mood for Love,movie,2000,87.0,"Drama, Romance"
+The Dark Knight,movie,2008,85.0,"Action, Crime, Drama"
+2001: A Space Odyssey,movie,1968,84.0,"Adventure, Sci-Fi"
+Blade Runner,movie,1982,84.0,"Action, Drama, Sci-Fi"
+The Shawshank Redemption,movie,1994,82.0,Drama
+Star Wars: Episode V - The Empire Strikes Back,movie,1980,82.0,"Action, Adventure, Fantasy"
+The Matrix,movie,1999,73.0,"Action, Sci-Fi"

@@ -1,4 +1,5 @@
-title,medium,critic_score,genres
-Sample Movie,movie,95,Comedy
-Sample Podcast,podcast,85,Comedy
-Sample Book,book,80,Satire
+title,medium,year,critic_score,genres
+Singin' in the Rain,movie,1952,99.0,"Comedy, Musical, Romance"
+The Rules of the Game,movie,1939,99.0,"Comedy, Drama"
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,movie,1964,97.0,"Comedy, War"
+Modern Times,movie,1936,96.0,"Comedy, Drama, Romance"
