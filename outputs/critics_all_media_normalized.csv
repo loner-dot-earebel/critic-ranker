@@ -1,0 +1,36 @@
+title,year,critic_score,genres,normalized_score
+Citizen Kane,1941,100,"Drama, Mystery",1.063234421174409
+The Godfather,1972,100,"Crime, Drama",1.063234421174409
+Tokyo Story,1953,100,Drama,1.063234421174409
+Lawrence of Arabia,1962,100,"Adventure, Biography, Drama",1.063234421174409
+Vertigo,1958,100,"Mystery, Romance, Thriller",1.063234421174409
+Rear Window,1954,100,"Drama, Mystery, Thriller",1.063234421174409
+Casablanca,1942,100,"Drama, Romance, War",1.063234421174409
+Singin' in the Rain,1952,99,"Comedy, Musical, Romance",0.9125736732347154
+The Rules of the Game,1939,99,"Comedy, Drama",0.9125736732347154
+Seven Samurai,1954,98,"Action, Drama",0.761912925295022
+Psycho,1960,97,"Drama, Horror, Mystery",0.6112521773553286
+Parasite,2019,97,"Drama, Thriller",0.6112521773553286
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,1964,97,"Comedy, War",0.6112521773553286
+Modern Times,1936,96,"Comedy, Drama, Romance",0.4605914294156352
+Spirited Away,2001,96,"Animation, Adventure, Family",0.4605914294156352
+Schindler's List,1993,95,"Biography, Drama, History",0.30993068147594177
+Pulp Fiction,1994,95,"Crime, Drama",0.30993068147594177
+The Social Network,2010,95,"Biography, Drama",0.30993068147594177
+Apocalypse Now,1979,94,"Drama, Mystery, War",0.15926993353624835
+The Lord of the Rings: The Return of the King,2003,94,"Adventure, Drama, Fantasy",0.15926993353624835
+There Will Be Blood,2007,93,Drama,0.00860918559655495
+Goodfellas,1990,92,"Biography, Crime, Drama",-0.14205156234313845
+No Country for Old Men,2007,92,"Crime, Drama, Thriller",-0.14205156234313845
+The Godfather Part II,1974,90,"Crime, Drama",-0.44337305822252526
+Raging Bull,1980,90,"Biography, Drama, Sport",-0.44337305822252526
+Star Wars: Episode IV - A New Hope,1977,90,"Action, Adventure, Fantasy",-0.44337305822252526
+Mad Max: Fury Road,2015,90,"Action, Adventure, Sci-Fi",-0.44337305822252526
+Mulholland Drive,2001,87,"Drama, Mystery, Thriller",-0.8953553020416055
+In the Mood for Love,2000,87,"Drama, Romance",-0.8953553020416055
+The Dark Knight,2008,85,"Action, Crime, Drama",-1.1966767979209922
+2001: A Space Odyssey,1968,84,"Adventure, Sci-Fi",-1.3473375458606858
+Blade Runner,1982,84,"Action, Drama, Sci-Fi",-1.3473375458606858
+The Shawshank Redemption,1994,82,Drama,-1.6486590417400726
+Star Wars: Episode V - The Empire Strikes Back,1980,82,"Action, Adventure, Fantasy",-1.6486590417400726
+The Matrix,1999,73,"Action, Sci-Fi",-3.0046057731973135
