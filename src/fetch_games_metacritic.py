@@ -30,9 +30,11 @@ def fetch_page(page):
         return []
 
     soup = BeautifulSoup(r.text, "html.parser")
+    print("Items found:", len(soup.select("div.clamp-summary-wrap")))
+
     rows = []
 
-    for item in soup.select("td.clamp-summary-wrap"):
+    for item in soup.select("div.clamp-summary-wrap"):
         title = item.select_one("a.title h3")
         score = item.select_one("div.metascore_w")
         platform = item.select_one("div.platform")
