@@ -36,6 +36,10 @@ jobs:
       - name: Fetch music album critics scores
         run: python src/fetch_music_metacritic.py
 
+      - name: Fetch video game critics scores
+        run: python src/fetch_games_metacritic.py
+
+
 
       # 5️⃣ Run TV Metacritic script
       - name: Run TV Metacritic script
