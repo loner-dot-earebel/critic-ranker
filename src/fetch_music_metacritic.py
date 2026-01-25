@@ -7,16 +7,27 @@ BASE_URL = "https://www.metacritic.com/browse/albums/score/metascore/all/filtere
 OUTPUT_FILE = "outputs/music_metacritic_ranked.csv"
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0"
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/120.0.0.0 Safari/537.36"
+    ),
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept": "text/html,application/xhtml+xml"
 }
 
-MAX_PAGES = 5  # start small; can be increased safely later
+
+MAX_PAGES = 2 # start small; can be increased safely later
 
 
 def fetch_page(page):
     url = f"{BASE_URL}?page={page}"
-    r = requests.get(url, headers=HEADERS, timeout=10)
-    if r.status_code != 200:
+
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=30)
+        r.raise_for_status()
+    except requests.exceptions.RequestException as e:
+        print(f"ERROR fetching page {page}: {e}")
         return []
 
     soup = BeautifulSoup(r.text, "html.parser")
@@ -38,6 +49,7 @@ def fetch_page(page):
         })
 
     return rows
+
 
 
 def main():
