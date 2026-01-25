@@ -3,7 +3,7 @@ import pandas as pd
 import time
 from bs4 import BeautifulSoup
 
-BASE_URL = "https://www.metacritic.com/browse/games/score/metascore/all/filtered"
+BASE_URL = "https://www.metacritic.com/browse/games/score/metascore/all/filtered?view=condensed"
 OUTPUT_FILE = "outputs/games_metacritic_ranked.csv"
 
 HEADERS = {
@@ -13,8 +13,10 @@ HEADERS = {
         "Chrome/120.0.0.0 Safari/537.36"
     ),
     "Accept-Language": "en-US,en;q=0.9",
-    "Accept": "text/html,application/xhtml+xml"
+    "Accept": "text/html,application/xhtml+xml",
+    "Cookie": "OptanonConsent=isIABGlobal=false&datestamp=Thu+Jan+01+2026; OptanonAlertBoxClosed=true"
 }
+
 
 MAX_PAGES = 2  # safe for GitHub Actions
 
