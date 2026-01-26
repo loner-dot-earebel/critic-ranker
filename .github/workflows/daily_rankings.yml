@@ -1,0 +1,96 @@
+name: Daily Critic Rankings
+
+on:
+  schedule:
+    # Runs every day at 11:00 PM PST (07:00 UTC next day)
+    - cron: "0 7 * * *"
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Python
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas requests beautifulsoup4 lxml
+
+      # Step 4: Fetch Movies/TV
+      - name: Fetch Movies and TV
+        env:
+          OMDB_API_KEY: ${{ secrets.OMDB_API_KEY }}
+        run: |
+          python src/rank_all_media.py
+          # Debug: show number of rows in output CSV
+          echo "Movie/TV rows:"
+          if [ -f outputs/critics_all_media_ranked.csv ]; then
+            wc -l outputs/critics_all_media_ranked.csv
+          else
+            echo "File not found"
+          fi
+
+      # Step 5: Fetch Music
+      - name: Fetch Music
+        run: |
+          python src/fetch_music_metacritic.py
+          # Debug: show number of rows in music CSV
+          echo "Music rows:"
+          if [ -f outputs/music_metacritic_ranked.csv ]; then
+            wc -l outputs/music_metacritic_ranked.csv
+          else
+            echo "File not found"
+          fi
+
+      # Step 6: Fetch Games
+      - name: Fetch Games
+        run: |
+          python src/fetch_games_opencritic.py
+          # Debug: show number of rows in games CSV
+          echo "Games rows:"
+          if [ -f data/games.csv ]; then
+            wc -l data/games.csv
+          else
+            echo "File not found"
+          fi
+
+      # Step 7: Merge All Critics
+      - name: Merge All Critics
+        run: |
+          python src/merge_all_critics.py
+          # Debug: show merged CSV row counts
+          echo "Merged all media rows:"
+          if [ -f outputs/critics_all_media_merged.csv ]; then
+            wc -l outputs/critics_all_media_merged.csv
+          else
+            echo "File not found"
+          fi
+          echo "Merged comedy/humor rows:"
+          if [ -f outputs/critics_comedy_humor_merged.csv ]; then
+            wc -l outputs/critics_comedy_humor_merged.csv
+          else
+            echo "File not found"
+          fi
+
+      # Step 8: Commit updated CSVs
+      - name: Commit CSV outputs
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@users.noreply.github.com"
+          git add outputs/*.csv
+          git diff-index --quiet HEAD || git commit -m "Daily rankings update"
+          git push
+        env:
+          # Needed for HTTPS push
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
