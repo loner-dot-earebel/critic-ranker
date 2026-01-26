@@ -1,10 +1,9 @@
 name: Daily Critic Rankings
 
+
 on:
-  schedule:
-    # runs daily at 3:00 UTC
-    - cron: '0 3 * * *'
-  workflow_dispatch:  # allows manual run
+  workflow_dispatch:
+
 
 jobs:
   rank_media:
