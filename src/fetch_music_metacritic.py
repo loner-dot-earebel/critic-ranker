@@ -1,77 +1,62 @@
 import requests
 import pandas as pd
 import time
-from bs4 import BeautifulSoup
+from pathlib import Path
 
-BASE_URL = "https://www.metacritic.com/browse/albums/score/metascore/all/filtered"
-OUTPUT_FILE = "outputs/music_metacritic_ranked.csv"
-
+OUTPUT_CSV = Path("outputs/music_metacritic_ranked.csv")
 HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/120.0.0.0 Safari/537.36"
-    ),
-    "Accept-Language": "en-US,en;q=0.9",
-    "Accept": "text/html,application/xhtml+xml"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 }
 
-
-MAX_PAGES = 2 # start small; can be increased safely later
-
+def fetch_with_retries(url, max_retries=3, backoff=5, timeout=10):
+    attempt = 0
+    while attempt < max_retries:
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=timeout)
+            r.raise_for_status()
+            return r
+        except requests.exceptions.RequestException as e:
+            attempt += 1
+            print(f"Request failed (attempt {attempt}/{max_retries}): {e}")
+            if attempt == max_retries:
+                print(f"Max retries reached for URL: {url}")
+                return None
+            sleep_time = backoff * attempt
+            print(f"Retrying in {sleep_time} seconds...")
+            time.sleep(sleep_time)
 
 def fetch_page(page):
-    url = f"{BASE_URL}?page={page}"
-
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=30)
-        r.raise_for_status()
-    except requests.exceptions.RequestException as e:
-        print(f"ERROR fetching page {page}: {e}")
+    url = f"https://www.metacritic.com/browse/albums/release-date/new-releases/all/date?page={page}"
+    r = fetch_with_retries(url)
+    if r is None:
         return []
-
-    soup = BeautifulSoup(r.text, "html.parser")
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(r.text, "lxml")
     rows = []
-
-    for item in soup.select("td.clamp-summary-wrap"):
-        title = item.select_one("a.title h3")
-        score = item.select_one("div.metascore_w")
-        artist = item.select_one("div.artist")
-
-        if not title or not score:
-            continue
-
-        rows.append({
-            "title": title.text.strip(),
-            "artist": artist.text.strip() if artist else "",
-            "critic_score": int(score.text.strip()),
-            "medium": "music"
-        })
-
+    for item in soup.select(".product_wrap"):
+        title = item.select_one(".product_title a")
+        score = item.select_one(".metascore_w")
+        if title and score and score.text.strip().isdigit():
+            rows.append({
+                "title": title.text.strip(),
+                "score": int(score.text.strip())
+            })
+    print(f"Items found on page {page}: {len(rows)}")
     return rows
 
-
-
 def main():
+    print("=== fetch_music_metacritic.py STARTED ===")
     all_rows = []
-
-    for page in range(MAX_PAGES):
-        print(f"Fetching music page {page}")
+    for page in range(2):  # first 2 pages for demo
         rows = fetch_page(page)
         all_rows.extend(rows)
-        time.sleep(2)
-
-    df = pd.DataFrame(all_rows)
-    if df.empty:
+        time.sleep(1)  # polite delay
+    if all_rows:
+        df = pd.DataFrame(all_rows)
+        df.to_csv(OUTPUT_CSV, index=False)
+        print(f"Saved music CSV: {OUTPUT_CSV} ({len(df)} rows)")
+    else:
         print("No music data collected")
-        return
-
-    df = df.drop_duplicates(subset=["title", "artist"])
-    df = df.sort_values("critic_score", ascending=False)
-
-    df.to_csv(OUTPUT_FILE, index=False)
-    print(f"Saved {len(df)} music albums")
-
 
 if __name__ == "__main__":
     main()
