@@ -45,7 +45,45 @@ jobs:
       - name: Merge All Critics
         run: python src/merge_all_critics.py
 
-      # Step 8: Commit updated CSVs
+      # Step 8: Preview top 5 rows of each CSV
+      - name: Preview top 5 rows
+        run: |
+          echo "=== Top 5 Movies/TV ==="
+          if [ -f outputs/critics_all_media_ranked.csv ]; then
+            head -n 6 outputs/critics_all_media_ranked.csv
+          else
+            echo "File not found"
+          fi
+
+          echo "=== Top 5 Music ==="
+          if [ -f outputs/music_metacritic_ranked.csv ]; then
+            head -n 6 outputs/music_metacritic_ranked.csv
+          else
+            echo "File not found"
+          fi
+
+          echo "=== Top 5 Games ==="
+          if [ -f data/games.csv ]; then
+            head -n 6 data/games.csv
+          else
+            echo "File not found"
+          fi
+
+          echo "=== Top 5 Merged All Media ==="
+          if [ -f outputs/critics_all_media_merged.csv ]; then
+            head -n 6 outputs/critics_all_media_merged.csv
+          else
+            echo "File not found"
+          fi
+
+          echo "=== Top 5 Comedy/Humor ==="
+          if [ -f outputs/critics_comedy_humor_merged.csv ]; then
+            head -n 6 outputs/critics_comedy_humor_merged.csv
+          else
+            echo "File not found"
+          fi
+
+      # Step 9: Commit updated CSVs
       - name: Commit CSV outputs
         run: |
           git config --global user.name "github-actions"
