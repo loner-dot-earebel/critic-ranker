@@ -1,79 +1,62 @@
-import csv
 import requests
+import pandas as pd
 import time
 from pathlib import Path
 
-OUTPUT_FILE = Path("data/games.csv")
-BASE_URL = "https://api.opencritic.com/api/game"
-PAGE_SIZE = 50
-MAX_PAGES = 20   # ~1000 games; increase later if desired
-SLEEP_SECONDS = 0.5
+OUTPUT_CSV = Path("data/games.csv")
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+}
 
-def fetch_page(page: int):
-    params = {
-        "skip": page * PAGE_SIZE,
-        "limit": PAGE_SIZE,
-        "sort": "score",
-        "order": "desc"
-    }
-    resp = requests.get(BASE_URL, params=params, timeout=20)
-    resp.raise_for_status()
-    return resp.json()
+def fetch_with_retries(url, max_retries=3, backoff=5, timeout=10):
+    attempt = 0
+    while attempt < max_retries:
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=timeout)
+            r.raise_for_status()
+            return r
+        except requests.exceptions.RequestException as e:
+            attempt += 1
+            print(f"Request failed (attempt {attempt}/{max_retries}): {e}")
+            if attempt == max_retries:
+                print(f"Max retries reached for URL: {url}")
+                return None
+            sleep_time = backoff * attempt
+            print(f"Retrying in {sleep_time} seconds...")
+            time.sleep(sleep_time)
+
+def fetch_page(page):
+    url = f"https://opencritic.com/browse/all/all/all/release-date?page={page}"
+    r = fetch_with_retries(url)
+    if r is None:
+        return []
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(r.text, "lxml")
+    rows = []
+    for item in soup.select(".game_tile"):
+        title_tag = item.select_one(".title")
+        score_tag = item.select_one(".metascore")
+        if title_tag and score_tag and score_tag.text.strip().isdigit():
+            rows.append({
+                "title": title_tag.text.strip(),
+                "score": int(score_tag.text.strip())
+            })
+    print(f"Items found on page {page}: {len(rows)}")
+    return rows
 
 def main():
     print("=== fetch_games_opencritic.py STARTED ===")
-
-    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-
-    rows = []
-    seen_titles = set()
-
-    for page in range(MAX_PAGES):
-        print(f"Fetching OpenCritic page {page}")
-        games = fetch_page(page)
-
-        if not games:
-            print("No more data returned.")
-            break
-
-        for g in games:
-            title = g.get("name")
-            if not title or title in seen_titles:
-                continue
-
-            score = g.get("medianScore") or g.get("topCriticScore")
-            if score is None:
-                continue
-
-            rows.append({
-                "title": title,
-                "score": round(score, 1),
-                "num_critics": g.get("numReviews"),
-                "release_year": g.get("firstReleaseDate", "")[:4],
-                "source": "OpenCritic"
-            })
-
-            seen_titles.add(title)
-
-        time.sleep(SLEEP_SECONDS)
-
-    print(f"Collected {len(rows)} games")
-
-    with OUTPUT_FILE.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(
-            f,
-            fieldnames=[
-                "title",
-                "score",
-                "num_critics",
-                "release_year",
-                "source"
-            ]
-        )
-        writer.writeheader()
-        writer.writerows(rows)
-
-    print(f"Wrote {OUTPUT_FILE}")
+    all_rows = []
+    for page in range(2):  # first 2 pages for demo
+        rows = fetch_page(page)
+        all_rows.extend(rows)
+        time.sleep(1)  # polite delay
+    if all_rows:
+        df = pd.DataFrame(all_rows)
+        df.to_csv(OUTPUT_CSV, index=False)
+        print(f"Saved games CSV: {OUTPUT_CSV} ({len(df)} rows)")
+    else:
+        print("No game data collected")
 
 if __name__ == "__main__":
     main()
