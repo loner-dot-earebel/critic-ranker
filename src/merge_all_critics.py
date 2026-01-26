@@ -49,6 +49,15 @@ def load_tv():
     df["critic_score"] = pd.NA  # No reliable scores yet
     return df
 
+def print_medium_counts(df, label):
+    if df.empty:
+        print(f"{label}: No rows")
+        return
+    counts = df["medium"].value_counts()
+    print(f"{label} medium counts:")
+    for medium, count in counts.items():
+        print(f"  {medium}: {count}")
+
 def main():
     print("=== merge_all_critics.py STARTED ===")
 
@@ -58,17 +67,24 @@ def main():
     games = load_games()
     tv = load_tv()
 
-    print(f"Loaded counts -> Movies: {len(movies)}, Music: {len(music)}, Games: {len(games)}, TV: {len(tv)}")
+    # Debug: show counts before merging
+    print_medium_counts(movies, "Movies")
+    print_medium_counts(music, "Music")
+    print_medium_counts(games, "Games")
+    print_medium_counts(tv, "TV series")
 
     # Combine all
     combined = pd.concat([movies, music, games, tv], ignore_index=True)
+
+    # Debug: counts after merging
+    print_medium_counts(combined, "Combined dataset")
 
     # Drop rows without critic_score for ranking
     ranked = combined.dropna(subset=["critic_score"]).sort_values("critic_score", ascending=False)
 
     print(f"Rows after dropping missing scores: {len(ranked)}")
 
-    # Save full merged dataset (includes TV)
+    # Save full merged dataset (includes TV structurally)
     combined.to_csv(OUTPUT_ALL, index=False)
     print(f"Saved merged dataset: {OUTPUT_ALL} ({len(combined)} rows)")
 
