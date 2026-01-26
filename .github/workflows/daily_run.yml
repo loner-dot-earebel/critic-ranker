@@ -1,4 +1,4 @@
-name: Daily Critics Ranking
+name: old Daily Critics Ranking
 
 on:
   workflow_dispatch:
