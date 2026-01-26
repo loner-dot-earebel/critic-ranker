@@ -45,8 +45,9 @@ jobs:
       - name: Run TV Metacritic script
         run: python src/fetch_tv_metacritic.py
 
-      - name: Normalize and merge rankings
-        run: python src/normalize_and_merge.py
+      - name: Merge all critics data
+        run: python src/merge_all_critics.py
+
 
 
       # 6️⃣ Commit updated CSVs
