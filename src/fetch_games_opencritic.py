@@ -30,7 +30,8 @@ def fetch_page(skip=0, limit=50):
         rows.append({
             "title": game.get("name"),
             "critic_score": round(score),
-            "genres": ", ".join(game.get("Genres", [])) if game.get("Genres") else None
+            "genres": ", ".join(g["name"] for g in game.get("Genres", []) if isinstance(g, dict) and "name" in g) or None
+
         })
 
     print(f"Fetched {len(rows)} games (skip={skip})")
