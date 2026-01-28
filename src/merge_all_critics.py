@@ -5,7 +5,7 @@ from pathlib import Path
 MOVIES_CSV = Path("outputs/critics_all_media_ranked.csv")
 MUSIC_CSV = Path("outputs/music_metacritic_ranked.csv")
 GAMES_CSV = Path("data/games.csv")
-TV_CSV = Path("src/seeds/movies_tv.csv")  # TV series included structurally
+#TV_CSV = Path("src/seeds/movies_tv.csv")  # TV series included structurally
 
 # Output paths
 OUTPUT_ALL = Path("outputs/critics_all_media_merged.csv")
@@ -40,14 +40,14 @@ def load_games():
     df["critic_score"] = pd.to_numeric(df.get("critic_score", None), errors="coerce")
     return df
 
-def load_tv():
-    if not TV_CSV.exists():
-        print(f"WARNING: TV CSV not found at {TV_CSV}")
-        return pd.DataFrame()
-    df = pd.read_csv(TV_CSV)
-    df["medium"] = "series"  # Force TV medium
-    df["critic_score"] = pd.NA  # No reliable scores yet
-    return df
+#def load_tv():
+#    if not TV_CSV.exists():
+#        print(f"WARNING: TV CSV not found at {TV_CSV}")
+#        return pd.DataFrame()
+#    df = pd.read_csv(TV_CSV)
+#    df["medium"] = "series"  # Force TV medium
+#    df["critic_score"] = pd.NA  # No reliable scores yet
+#    return df
 
 def print_medium_counts(df, label):
     if df.empty:
@@ -65,17 +65,19 @@ def main():
     movies = load_movies()
     music = load_music()
     games = load_games()
-    tv = load_tv()
+#    tv = load_tv()
 
     # Debug: show counts before merging
     print_medium_counts(movies, "Movies")
     print_medium_counts(music, "Music")
     print_medium_counts(games, "Games")
-    print_medium_counts(tv, "TV series")
+#    print_medium_counts(tv, "TV series")
 
     # Combine all
-    combined = pd.concat([movies, music, games, tv], ignore_index=True)
+#    combined = pd.concat([movies, music, games, tv], ignore_index=True)
+    combined = pd.concat([movies, music, games], ignore_index=True)
 
+    
     # Debug: counts after merging
     print_medium_counts(combined, "Combined dataset")
 
