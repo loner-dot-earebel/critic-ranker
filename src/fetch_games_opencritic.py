@@ -4,59 +4,54 @@ import time
 from pathlib import Path
 
 OUTPUT_CSV = Path("data/games.csv")
+
+BASE_URL = "https://api.opencritic.com/api/game"
+
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+    "User-Agent": "Mozilla/5.0"
 }
 
-def fetch_with_retries(url, max_retries=3, backoff=5, timeout=10):
-    attempt = 0
-    while attempt < max_retries:
-        try:
-            r = requests.get(url, headers=HEADERS, timeout=timeout)
-            r.raise_for_status()
-            return r
-        except requests.exceptions.RequestException as e:
-            attempt += 1
-            print(f"Request failed (attempt {attempt}/{max_retries}): {e}")
-            if attempt == max_retries:
-                print(f"Max retries reached for URL: {url}")
-                return None
-            sleep_time = backoff * attempt
-            print(f"Retrying in {sleep_time} seconds...")
-            time.sleep(sleep_time)
+def fetch_page(skip=0, limit=50):
+    params = {
+        "skip": skip,
+        "limit": limit,
+        "sort": "score",
+        "order": "desc"
+    }
+    r = requests.get(BASE_URL, params=params, headers=HEADERS, timeout=15)
+    r.raise_for_status()
+    data = r.json()
 
-def fetch_page(page):
-    url = f"https://opencritic.com/browse/all/all/all/release-date?page={page}"
-    r = fetch_with_retries(url)
-    if r is None:
-        return []
-    from bs4 import BeautifulSoup
-    soup = BeautifulSoup(r.text, "lxml")
     rows = []
-    for item in soup.select(".game_tile"):
-        title_tag = item.select_one(".title")
-        score_tag = item.select_one(".metascore")
-        if title_tag and score_tag and score_tag.text.strip().isdigit():
-            rows.append({
-                "title": title_tag.text.strip(),
-                "score": int(score_tag.text.strip())
-            })
-    print(f"Items found on page {page}: {len(rows)}")
+    for game in data:
+        score = game.get("topCriticScore")
+        if score is None:
+            continue
+        rows.append({
+            "title": game.get("name"),
+            "critic_score": round(score),
+            "genres": ", ".join(game.get("Genres", [])) if game.get("Genres") else None
+        })
+
+    print(f"Fetched {len(rows)} games (skip={skip})")
     return rows
 
 def main():
     print("=== fetch_games_opencritic.py STARTED ===")
     all_rows = []
-    for page in range(2):  # first 2 pages for demo
-        rows = fetch_page(page)
+
+    for skip in range(0, 200, 50):  # top ~200 games
+        rows = fetch_page(skip=skip)
         all_rows.extend(rows)
-        time.sleep(1)  # polite delay
-    if all_rows:
-        df = pd.DataFrame(all_rows)
-        df.to_csv(OUTPUT_CSV, index=False)
-        print(f"Saved games CSV: {OUTPUT_CSV} ({len(df)} rows)")
-    else:
+        time.sleep(1)
+
+    if not all_rows:
         print("No game data collected")
+        return
+
+    df = pd.DataFrame(all_rows)
+    df.to_csv(OUTPUT_CSV, index=False)
+    print(f"Saved games CSV: {OUTPUT_CSV} ({len(df)} rows)")
 
 if __name__ == "__main__":
     main()
