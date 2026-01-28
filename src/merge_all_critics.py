@@ -35,6 +35,9 @@ def load_games():
         print(f"WARNING: Games CSV not found at {GAMES_CSV}")
         return pd.DataFrame()
     df = pd.read_csv(GAMES_CSV)
+    if df.empty:
+        print("WARNING: Games CSV is empty")
+        return pd.DataFrame()
     df["medium"] = "game"
     df.rename(columns={"score": "critic_score"}, inplace=True)
     df["critic_score"] = pd.to_numeric(df.get("critic_score", None), errors="coerce")
