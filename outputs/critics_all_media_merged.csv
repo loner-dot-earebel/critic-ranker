@@ -1,286 +1,316 @@
-title,medium,year,critic_score,genres,artist,type,year_hint
-Citizen Kane,movie,1941.0,100,"Drama, Mystery",,,
-The Godfather,movie,1972.0,100,"Crime, Drama",,,
-Tokyo Story,movie,1953.0,100,Drama,,,
-Lawrence of Arabia,movie,1962.0,100,"Adventure, Biography, Drama",,,
-Vertigo,movie,1958.0,100,"Mystery, Romance, Thriller",,,
-Rear Window,movie,1954.0,100,"Drama, Mystery, Thriller",,,
-Casablanca,movie,1942.0,100,"Drama, Romance, War",,,
-Singin' in the Rain,movie,1952.0,99,"Comedy, Musical, Romance",,,
-The Rules of the Game,movie,1939.0,99,"Comedy, Drama",,,
-Seven Samurai,movie,1954.0,98,"Action, Drama",,,
-Psycho,movie,1960.0,97,"Drama, Horror, Mystery",,,
-Parasite,movie,2019.0,97,"Drama, Thriller",,,
-Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,movie,1964.0,97,"Comedy, War",,,
-Modern Times,movie,1936.0,96,"Comedy, Drama, Romance",,,
-Spirited Away,movie,2001.0,96,"Animation, Adventure, Family",,,
-Schindler's List,movie,1993.0,95,"Biography, Drama, History",,,
-Pulp Fiction,movie,1994.0,95,"Crime, Drama",,,
-The Social Network,movie,2010.0,95,"Biography, Drama",,,
-Apocalypse Now,movie,1979.0,94,"Drama, Mystery, War",,,
-The Lord of the Rings: The Return of the King,movie,2003.0,94,"Adventure, Drama, Fantasy",,,
-There Will Be Blood,movie,2007.0,93,Drama,,,
-Goodfellas,movie,1990.0,92,"Biography, Crime, Drama",,,
-No Country for Old Men,movie,2007.0,92,"Crime, Drama, Thriller",,,
-The Godfather Part II,movie,1974.0,90,"Crime, Drama",,,
-Raging Bull,movie,1980.0,90,"Biography, Drama, Sport",,,
-Star Wars: Episode IV - A New Hope,movie,1977.0,90,"Action, Adventure, Fantasy",,,
-Mad Max: Fury Road,movie,2015.0,90,"Action, Adventure, Sci-Fi",,,
-Mulholland Drive,movie,2001.0,87,"Drama, Mystery, Thriller",,,
-In the Mood for Love,movie,2000.0,87,"Drama, Romance",,,
-The Dark Knight,movie,2008.0,85,"Action, Crime, Drama",,,
-2001: A Space Odyssey,movie,1968.0,84,"Adventure, Sci-Fi",,,
-Blade Runner,movie,1982.0,84,"Action, Drama, Sci-Fi",,,
-The Shawshank Redemption,movie,1994.0,82,Drama,,,
-Star Wars: Episode V - The Empire Strikes Back,movie,1980.0,82,"Action, Adventure, Fantasy",,,
-The Matrix,movie,1999.0,73,"Action, Sci-Fi",,,
-Ten Freedom Summers,music,,99,,by Wadada Leo Smith,,
-Fetch the Bolt Cutters,music,,98,,by Fiona Apple,,
-SMiLE,music,,97,,by Brian Wilson,,
-Van Lear Rose,music,,97,,by Loretta Lynn,,
-To Pimp A Butterfly,music,,96,,by Kendrick Lamar,,
-Ghosteen,music,,96,,by Nick Cave & the Bad Seeds,,
-Histoire de Melody Nelson,music,,96,,by Serge Gainsbourg,,
-Fountain Baby,music,,95,,by Amaarae,,
-DAMN.,music,,95,,by Kendrick Lamar,,
-Stankonia,music,,95,,by Outkast,,
-Rough and Rowdy Ways,music,,95,,by Bob Dylan,,
-Black Messiah,music,,95,,by D'Angelo,,
-Fly or Die Fly or Die Fly or Die (world war),music,,95,,by Jaimie Branch,,
-DeBÍ TiRAR MáS FOToS,music,,95,,by Bad Bunny,,
-BRAT,music,,95,,by Charli xcx,,
-Conflict Of Interest,music,,95,,by Ghetts,,
-Skeleton Tree,music,,95,,by Nick Cave & the Bad Seeds,,
-Lux,music,,95,,by Rosalía,,
-Savane,music,,94,,by Ali Farka Toure,,
-My Beautiful Dark Twisted Fantasy,music,,94,,by Kanye West,,
-Baby,music,,94,,by Dijon,,
-Motomami,music,,94,,by Rosalía,,
-"Desire, I Want To Turn into You",music,,94,,by Caroline Polachek,,
-Madvillainy,music,,93,,by Madvillain,,
-A Crow Looked at Me,music,,93,,by Mount Eerie,,
-Room 25,music,,93,,by Noname,,
-Live At Reading,music,,93,,by Nirvana,,
-Love And Theft,music,,93,,by Bob Dylan,,
-Songs of a Lost World,music,,93,,by The Cure,,
-My Dusty Road,music,,93,,by Woody Guthrie,,
-On the Impossible Past,music,,93,,by The Menzingers,,
-Supernova,music,,92,,by Nova Twins,,
-Prioritise Pleasure,music,,92,,by Self Esteem,,
-Lemonade,music,,92,,by Beyoncé,,
-Ants From Up There,music,,92,,"by Black Country, New Road",,
-Pull Up Some Dust and Sit Down,music,,92,,by Ry Cooder,,
-Sunbather,music,,92,,by Deafheaven,,
-Absolute Elsewhere,music,,92,,by Blood Incantation,,
-Glow On,music,,92,,by Turnstile,,
-"Orphans: Brawlers, Bawlers & Bastards",music,,92,,by Tom Waits,,
-Time Will Die and Love Will Bury It,music,,92,,by Rolo Tomassi,,
-Boy In Da Corner,music,,92,,by Dizzee Rascal,,
-You Want It Darker,music,,92,,by Leonard Cohen,,
-Channel Orange,music,,92,,by Frank Ocean,,
-The Satanist,music,,92,,by Behemoth,,
-Elephant,music,,92,,by The White Stripes,,
-Blizzard,music,,92,,by Dove Ellis,,
-We're All Alone In This Together,music,,92,,by Dave,,
-Titanic Rising,music,,91,,by Weyes Blood,,
-Patterns in Repeat,music,,91,,by Laura Marling,,
-Carnage,music,,91,,by Nick Cave & Warren Ellis,,
-Melodrama,music,,91,,by Lorde,,
-Speakerboxxx/The Love Below,music,,91,,by Outkast,,
-The Greater Wings,music,,91,,by Julie Byrne,,
-Set My Heart on Fire Immediately,music,,91,,by Perfume Genius,,
-Red (Taylor's Version),music,,91,,by Taylor Swift,,
-"Home, Like Noplace Is There",music,,91,,by The Hotelier,,
-Ego Death At A Bachelorette Party,music,,91,,by Hayley Williams,,
-"Good Kid, M.A.A.D City",music,,91,,by Kendrick Lamar,,
-A Grand Don't Come For Free,music,,91,,by The Streets,,
-The Myth of the Happily Ever After,music,,91,,by Biffy Clyro,,
-COWBOY CARTER,music,,91,,by Beyoncé,,
-Glutton for Punishment,music,,91,,by Heartworms,,
-Black Rainbows,music,,91,,by Corinne Bailey Rae,,
-Renaissance,music,,91,,by Beyoncé,,
-Canto,music,,91,,by Los Super Seven,,
-Grey Area,music,,91,,by Little Simz,,
-"Sex, Death & The Infinite Void",music,,91,,by Creeper,,
-The ArchAndroid,music,,91,,by Janelle Monáe,,
-Gold & Grey,music,,91,,by Baroness,,
-Blue Weekend,music,,91,,by Wolf Alice,,
-The  Guitar Song,music,,91,,by Jamey Johnson,,
-Guts,music,,91,,by Olivia Rodrigo,,
-Diamond Jubilee,music,,91,,by Cindy Lee,,
-Is This It?,music,,91,,by The Strokes,,
-We Got It From Here...Thank You 4 Your Service,music,,91,,by A Tribe Called Quest,,
-S.O.S.,music,,90,,by SZA,,
-From Here We Go Sublime,music,,90,,by The Field,,
-Illinois,music,,90,,by Sufjan Stevens,,
-Carrie & Lowell,music,,90,,by Sufjan Stevens,,
-Jimmy Lee,music,,90,,by Raphael Saadiq,,
-No Cities to Love,music,,90,,by Sleater-Kinney,,
-Eve,music,,90,,by Rapsody,,
-Punisher,music,,90,,by Phoebe Bridgers,,
-1989 (Taylor's Version),music,,90,,by Taylor Swift,,
-private music,music,,90,,by Deftones,,
-Send Them To Coventry [Mixtape],music,,90,,by Pa Salieu,,
-Original Pirate Material,music,,90,,by The Streets,,
-The Land Is Inhospitable and So Are We,music,,90,,by Mitski,,
-Candi Staton,music,,90,,by Candi Staton,,
-Alice,music,,90,,by Tom Waits,,
-Sad And Beautiful World,music,,90,,by Mavis Staples,,
-Constant Noise,music,,90,,by Benefits,,
-Glory,music,,90,,by Perfume Genius,,
-Funeral,music,,90,,by Arcade Fire,,
-Here in the Pitch,music,,90,,by Jessica Pratt,,
-Holy Hell,music,,90,,by Architects,,
-London Zoo,music,,90,,by The Bug,,
-Iechyd Da,music,,90,,by Bill Ryder-Jones,,
-Jama Ko,music,,90,,by Bassekou Kouyate & Ngoni Ba,,
-Sir Lucious Left Foot: The Son of Chico Dusty,music,,90,,by Big Boi,,
-Psychodrama,music,,90,,by Dave,,
-Untrue,music,,90,,by Burial,,
-the record,music,,90,,by Boygenius,,
-Maps,music,,90,,by billy woods,,
-græ,music,,90,,by Moses Sumney,,
-Funeral for Justice,music,,90,,by Mdou Moctar,,
-XTRMNTR,music,,90,,by Primal Scream,,
-Spaces,music,,90,,by Nils Frahm,,
-LSD,music,,90,,by Cardiacs,,
-Z,music,,90,,by My Morning Jacket,,
-St. Vincent,music,,89,,by St. Vincent,,
-The Dusk in Us,music,,89,,by Converge,,
-Like a Rose,music,,89,,by Ashley Monroe,,
-RTJ2,music,,89,,by Run the Jewels,,
-Rounds,music,,89,,by Four Tet,,
-Neon Golden,music,,89,,by The Notwist,,
-Since I Left You,music,,89,,by The Avalanches,,
-Honey,music,,89,,by Robyn,,
-"Eternity, In Your Arms",music,,89,,by Creeper,,
-Kiwanuka,music,,89,,by Michael Kiwanuka,,
-Modern Times,music,,89,,by Bob Dylan,,
-That! Feels Good!,music,,89,,by Jessie Ware,,
-Rat Saw God,music,,89,,by Wednesday,,
-LEGACY! LEGACY!,music,,89,,by Jamila Woods,,
-Apex Predator - Easy Meat,music,,89,,by Napalm Death,,
-HoboSapiens,music,,89,,by John Cale,,
-Miss E... So Addictive,music,,89,,by Missy Elliott,,
-Bloodmoon: I,music,,89,,by Converge,,
-RTJ4,music,,89,,by Run the Jewels,,
-Sawayama,music,,89,,by Rina Sawayama,,
-Wild God,music,,89,,by Nick Cave & the Bad Seeds,,
-Getting Killed,music,,89,,by Geese,,
-EELS,music,,89,,by Being Dead,,
-I Love You Jennifer B,music,,89,,by Jockstrap,,
-Black Origami,music,,89,,by Jlin,,
-Florist,music,,89,,by Florist,,
-Heart Under,music,,89,,by Just Mustard,,
-"Bachelor No. 2 (or, the last remains of the dodo)",music,,89,,by Aimee Mann,,
-All Mirrors,music,,89,,by Angel Olsen,,
-The Passionate Ones,music,,89,,by Nourished By Time,,
-I Got Heaven,music,,89,,by Mannequin Pussy,,
-Natural Brown Prom Queen,music,,89,,by Sudan Archives,,
-Nobody Loves You More,music,,89,,by Kim Deal,,
-Hit Me Hard and Soft,music,,89,,by Billie Eilish,,
-Feeding the Machine,music,,89,,by Binker & Moses,,
-For Those I Love,music,,89,,by For Those I Love,,
-Shortly After Takeoff,music,,89,,by BC Camplight,,
-Safe In The Hands Of Love,music,,89,,by Yves Tumor,,
-The Fade in Time,music,,89,,by Sam Lee,,
-Hand.Cannot.Erase.,music,,89,,by Steven Wilson,,
-Passage du Désir,music,,89,,by Johnny Blue Skies,,
-Coloring Book [Mixtape],music,,89,,by Chance the Rapper,,
-Big Fish Theory,music,,89,,by Vince Staples,,
-Ignorance,music,,89,,by The Weather Station,,
-The  Order of Time,music,,89,,by Valerie June,,
-Fed,music,,89,,by Plush,,
-Golden Hour,music,,89,,by Kacey Musgraves,,
-Chris,music,,89,,by Christine and the Queens,,
-Tigers Blood,music,,89,,by Waxahatchee,,
-A Seat at the Table,music,,89,,by Solange,,
-Last Exit,music,,89,,by Junior Boys,,
-Night Reign,music,,89,,by Arooj Aftab,,
-Pink Noise,music,,89,,by Laura Mvula,,
-When I Get Home,music,,89,,by Solange,,
-We Are Not Your Kind,music,,89,,by Slipknot,,
-The Idler Wheel Is Wiser than the Driver of the Screw and Whipping Cords Will Serve You More than Ropes Will Ever Do,music,,89,,by Fiona Apple,,
-Merriweather Post Pavilion,music,,89,,by Animal Collective,,
-False Lankum,music,,89,,by Lankum,,
-Songs For The Deaf,music,,89,,by Queens of the Stone Age,,
-Bright Green Field,music,,89,,by Squid,,
-Wearemonster,music,,89,,by Isolée,,
-Ali & Toumani,music,,89,,by Ali Farka Toure And Toumani Diabate,,
-All Hell,music,,89,,by Los Campesinos!,,
-They're Calling Me Home,music,,89,,by Rhiannon Giddens,,
-Antidepressants,music,,89,,by The London Suede,,
-All Born Screaming,music,,89,,by St. Vincent,,
-Hell Hath No Fury,music,,89,,by Clipse,,
-New Threats From The Soul,music,,89,,by Ryan Davis & The Roadhouse Band,,
-The Greatest Story Never Told,music,,89,,by Saigon,,
-Push Barman To Open Old Wounds,music,,89,,by Belle and Sebastian,,
-Sanguivore,music,,89,,by Creeper,,
-Romance,music,,89,,by Fontaines D.C.,,
-Riderless Horse,music,,89,,by Nina Nastasia,,
-"Women in Music, Pt. III",music,,89,,by HAIM,,
-I Am Not There Anymore,music,,89,,by The Clientele,,
-Same Trailer Different Park,music,,89,,by Kacey Musgraves,,
-We're New Again: A Reimagining by Makaya McCraven,music,,89,,by Gil Scott-Heron,,
-Chrome Dreams,music,,88,,by Neil Young,,
-folklore,music,,88,,by Taylor Swift,,
-The Complete Dirty South,music,,88,,by Drive-By Truckers,,
-Chutes Too Narrow,music,,88,,by The Shins,,
-"Yours, Mine & Ours",music,,88,,by Pernice Brothers,,
-To Be Kind,music,,88,,by Swans,,
-Valentine,music,,88,,by Snail Mail,,
-Essex Honey,music,,88,,by Blood Orange,,
-War Music,music,,88,,by Refused,,
-American Band,music,,88,,by Drive-By Truckers,,
-Hypermagic Mountain,music,,88,,by Lightning Bolt,,
-Only Built 4 Cuban Linx... Pt. II,music,,88,,by Raekwon,,
-Citizen Kane,series,,,,,movie,1941.0
-The Godfather,series,,,,,movie,1972.0
-The Godfather Part II,series,,,,,movie,1974.0
-Tokyo Story,series,,,,,movie,1953.0
-2001: A Space Odyssey,series,,,,,movie,1968.0
-Seven Samurai,series,,,,,movie,1954.0
-Vertigo,series,,,,,movie,1958.0
-Apocalypse Now,series,,,,,movie,1979.0
-The Rules of the Game,series,,,,,movie,1939.0
-Psycho,series,,,,,movie,1960.0
-The Dark Knight,series,,,,,movie,2008.0
-Schindler's List,series,,,,,movie,1993.0
-Pulp Fiction,series,,,,,movie,1994.0
-Mulholland Drive,series,,,,,movie,2001.0
-There Will Be Blood,series,,,,,movie,2007.0
-Parasite,series,,,,,movie,2019.0
-Spirited Away,series,,,,,movie,2001.0
-Casablanca,series,,,,,movie,1942.0
-Rear Window,series,,,,,movie,1954.0
-Singin' in the Rain,series,,,,,movie,1952.0
-Dr. Strangelove,series,,,,,movie,1964.0
-The Shawshank Redemption,series,,,,,movie,1994.0
-Lawrence of Arabia,series,,,,,movie,1962.0
-Modern Times,series,,,,,movie,1936.0
-The Matrix,series,,,,,movie,1999.0
-Blade Runner,series,,,,,movie,1982.0
-Star Wars: Episode IV - A New Hope,series,,,,,movie,1977.0
-The Empire Strikes Back,series,,,,,movie,1980.0
-The Lord of the Rings: The Return of the King,series,,,,,movie,2003.0
-The Social Network,series,,,,,movie,2010.0
-Mad Max: Fury Road,series,,,,,movie,2015.0
-No Country for Old Men,series,,,,,movie,2007.0
-Raging Bull,series,,,,,movie,1980.0
-Goodfellas,series,,,,,movie,1990.0
-In the Mood for Love,series,,,,,movie,2000.0
-Twin Peaks: The Return,series,,,,,series,2017.0
-The Sopranos,series,,,,,series,1999.0
-Breaking Bad,series,,,,,series,2008.0
-The Wire,series,,,,,series,2002.0
-Mad Men,series,,,,,series,2007.0
-Seinfeld,series,,,,,series,1989.0
-The Simpsons,series,,,,,series,1989.0
-Fargo,series,,,,,series,2014.0
-Chernobyl,series,,,,,series,2019.0
-Arrested Development,series,,,,,series,2003.0
-Monty Python's Flying Circus,series,,,,,series,1969.0
-The Office (UK),series,,,,,series,2001.0
-I Love Lucy,series,,,,,series,1951.0
-Cheers,series,,,,,series,1982.0
-Saturday Night Live,series,,,,,series,1975.0
+title,medium,year,critic_score,genres,artist
+Citizen Kane,movie,1941.0,100,"Drama, Mystery",
+The Godfather,movie,1972.0,100,"Crime, Drama",
+Tokyo Story,movie,1953.0,100,Drama,
+Lawrence of Arabia,movie,1962.0,100,"Adventure, Biography, Drama",
+Vertigo,movie,1958.0,100,"Mystery, Romance, Thriller",
+Rear Window,movie,1954.0,100,"Drama, Mystery, Thriller",
+Casablanca,movie,1942.0,100,"Drama, Romance, War",
+Singin' in the Rain,movie,1952.0,99,"Comedy, Musical, Romance",
+The Rules of the Game,movie,1939.0,99,"Comedy, Drama",
+Seven Samurai,movie,1954.0,98,"Action, Drama",
+Psycho,movie,1960.0,97,"Drama, Horror, Mystery",
+Parasite,movie,2019.0,97,"Drama, Thriller",
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,movie,1964.0,97,"Comedy, War",
+Modern Times,movie,1936.0,96,"Comedy, Drama, Romance",
+Spirited Away,movie,2001.0,96,"Animation, Adventure, Family",
+Schindler's List,movie,1993.0,95,"Biography, Drama, History",
+Pulp Fiction,movie,1994.0,95,"Crime, Drama",
+The Social Network,movie,2010.0,95,"Biography, Drama",
+Apocalypse Now,movie,1979.0,94,"Drama, Mystery, War",
+The Lord of the Rings: The Return of the King,movie,2003.0,94,"Adventure, Drama, Fantasy",
+There Will Be Blood,movie,2007.0,93,Drama,
+Goodfellas,movie,1990.0,92,"Biography, Crime, Drama",
+No Country for Old Men,movie,2007.0,92,"Crime, Drama, Thriller",
+The Godfather Part II,movie,1974.0,90,"Crime, Drama",
+Raging Bull,movie,1980.0,90,"Biography, Drama, Sport",
+Star Wars: Episode IV - A New Hope,movie,1977.0,90,"Action, Adventure, Fantasy",
+Mad Max: Fury Road,movie,2015.0,90,"Action, Adventure, Sci-Fi",
+Mulholland Drive,movie,2001.0,87,"Drama, Mystery, Thriller",
+In the Mood for Love,movie,2000.0,87,"Drama, Romance",
+The Dark Knight,movie,2008.0,85,"Action, Crime, Drama",
+2001: A Space Odyssey,movie,1968.0,84,"Adventure, Sci-Fi",
+Blade Runner,movie,1982.0,84,"Action, Drama, Sci-Fi",
+The Shawshank Redemption,movie,1994.0,82,Drama,
+Star Wars: Episode V - The Empire Strikes Back,movie,1980.0,82,"Action, Adventure, Fantasy",
+The Matrix,movie,1999.0,73,"Action, Sci-Fi",
+Ten Freedom Summers,music,,99,,by Wadada Leo Smith
+Fetch the Bolt Cutters,music,,98,,by Fiona Apple
+SMiLE,music,,97,,by Brian Wilson
+Van Lear Rose,music,,97,,by Loretta Lynn
+To Pimp A Butterfly,music,,96,,by Kendrick Lamar
+Ghosteen,music,,96,,by Nick Cave & the Bad Seeds
+Histoire de Melody Nelson,music,,96,,by Serge Gainsbourg
+Fountain Baby,music,,95,,by Amaarae
+DAMN.,music,,95,,by Kendrick Lamar
+Stankonia,music,,95,,by Outkast
+Rough and Rowdy Ways,music,,95,,by Bob Dylan
+Black Messiah,music,,95,,by D'Angelo
+Fly or Die Fly or Die Fly or Die (world war),music,,95,,by Jaimie Branch
+DeBÍ TiRAR MáS FOToS,music,,95,,by Bad Bunny
+BRAT,music,,95,,by Charli xcx
+Conflict Of Interest,music,,95,,by Ghetts
+Skeleton Tree,music,,95,,by Nick Cave & the Bad Seeds
+Lux,music,,95,,by Rosalía
+Savane,music,,94,,by Ali Farka Toure
+My Beautiful Dark Twisted Fantasy,music,,94,,by Kanye West
+Baby,music,,94,,by Dijon
+Motomami,music,,94,,by Rosalía
+"Desire, I Want To Turn into You",music,,94,,by Caroline Polachek
+Madvillainy,music,,93,,by Madvillain
+A Crow Looked at Me,music,,93,,by Mount Eerie
+Room 25,music,,93,,by Noname
+Live At Reading,music,,93,,by Nirvana
+Love And Theft,music,,93,,by Bob Dylan
+Songs of a Lost World,music,,93,,by The Cure
+My Dusty Road,music,,93,,by Woody Guthrie
+On the Impossible Past,music,,93,,by The Menzingers
+Supernova,music,,92,,by Nova Twins
+Prioritise Pleasure,music,,92,,by Self Esteem
+Lemonade,music,,92,,by Beyoncé
+Ants From Up There,music,,92,,"by Black Country, New Road"
+Pull Up Some Dust and Sit Down,music,,92,,by Ry Cooder
+Sunbather,music,,92,,by Deafheaven
+Absolute Elsewhere,music,,92,,by Blood Incantation
+Glow On,music,,92,,by Turnstile
+"Orphans: Brawlers, Bawlers & Bastards",music,,92,,by Tom Waits
+Time Will Die and Love Will Bury It,music,,92,,by Rolo Tomassi
+Boy In Da Corner,music,,92,,by Dizzee Rascal
+You Want It Darker,music,,92,,by Leonard Cohen
+Channel Orange,music,,92,,by Frank Ocean
+The Satanist,music,,92,,by Behemoth
+Elephant,music,,92,,by The White Stripes
+Blizzard,music,,92,,by Dove Ellis
+We're All Alone In This Together,music,,92,,by Dave
+Titanic Rising,music,,91,,by Weyes Blood
+Patterns in Repeat,music,,91,,by Laura Marling
+Carnage,music,,91,,by Nick Cave & Warren Ellis
+Melodrama,music,,91,,by Lorde
+Speakerboxxx/The Love Below,music,,91,,by Outkast
+The Greater Wings,music,,91,,by Julie Byrne
+Set My Heart on Fire Immediately,music,,91,,by Perfume Genius
+Red (Taylor's Version),music,,91,,by Taylor Swift
+"Home, Like Noplace Is There",music,,91,,by The Hotelier
+Ego Death At A Bachelorette Party,music,,91,,by Hayley Williams
+"Good Kid, M.A.A.D City",music,,91,,by Kendrick Lamar
+A Grand Don't Come For Free,music,,91,,by The Streets
+The Myth of the Happily Ever After,music,,91,,by Biffy Clyro
+COWBOY CARTER,music,,91,,by Beyoncé
+Glutton for Punishment,music,,91,,by Heartworms
+Black Rainbows,music,,91,,by Corinne Bailey Rae
+Renaissance,music,,91,,by Beyoncé
+Canto,music,,91,,by Los Super Seven
+Grey Area,music,,91,,by Little Simz
+"Sex, Death & The Infinite Void",music,,91,,by Creeper
+The ArchAndroid,music,,91,,by Janelle Monáe
+Gold & Grey,music,,91,,by Baroness
+Blue Weekend,music,,91,,by Wolf Alice
+The  Guitar Song,music,,91,,by Jamey Johnson
+Guts,music,,91,,by Olivia Rodrigo
+Diamond Jubilee,music,,91,,by Cindy Lee
+Is This It?,music,,91,,by The Strokes
+We Got It From Here...Thank You 4 Your Service,music,,91,,by A Tribe Called Quest
+S.O.S.,music,,90,,by SZA
+From Here We Go Sublime,music,,90,,by The Field
+Illinois,music,,90,,by Sufjan Stevens
+Carrie & Lowell,music,,90,,by Sufjan Stevens
+Jimmy Lee,music,,90,,by Raphael Saadiq
+No Cities to Love,music,,90,,by Sleater-Kinney
+Eve,music,,90,,by Rapsody
+Punisher,music,,90,,by Phoebe Bridgers
+1989 (Taylor's Version),music,,90,,by Taylor Swift
+private music,music,,90,,by Deftones
+Send Them To Coventry [Mixtape],music,,90,,by Pa Salieu
+Original Pirate Material,music,,90,,by The Streets
+The Land Is Inhospitable and So Are We,music,,90,,by Mitski
+Candi Staton,music,,90,,by Candi Staton
+Alice,music,,90,,by Tom Waits
+Sad And Beautiful World,music,,90,,by Mavis Staples
+Constant Noise,music,,90,,by Benefits
+Glory,music,,90,,by Perfume Genius
+Funeral,music,,90,,by Arcade Fire
+Here in the Pitch,music,,90,,by Jessica Pratt
+Holy Hell,music,,90,,by Architects
+London Zoo,music,,90,,by The Bug
+Iechyd Da,music,,90,,by Bill Ryder-Jones
+Jama Ko,music,,90,,by Bassekou Kouyate & Ngoni Ba
+Sir Lucious Left Foot: The Son of Chico Dusty,music,,90,,by Big Boi
+Psychodrama,music,,90,,by Dave
+Untrue,music,,90,,by Burial
+the record,music,,90,,by Boygenius
+Maps,music,,90,,by billy woods
+græ,music,,90,,by Moses Sumney
+Funeral for Justice,music,,90,,by Mdou Moctar
+XTRMNTR,music,,90,,by Primal Scream
+Spaces,music,,90,,by Nils Frahm
+LSD,music,,90,,by Cardiacs
+Z,music,,90,,by My Morning Jacket
+St. Vincent,music,,89,,by St. Vincent
+The Dusk in Us,music,,89,,by Converge
+Like a Rose,music,,89,,by Ashley Monroe
+RTJ2,music,,89,,by Run the Jewels
+Rounds,music,,89,,by Four Tet
+Neon Golden,music,,89,,by The Notwist
+Since I Left You,music,,89,,by The Avalanches
+Honey,music,,89,,by Robyn
+"Eternity, In Your Arms",music,,89,,by Creeper
+Kiwanuka,music,,89,,by Michael Kiwanuka
+Modern Times,music,,89,,by Bob Dylan
+That! Feels Good!,music,,89,,by Jessie Ware
+Rat Saw God,music,,89,,by Wednesday
+LEGACY! LEGACY!,music,,89,,by Jamila Woods
+Apex Predator - Easy Meat,music,,89,,by Napalm Death
+HoboSapiens,music,,89,,by John Cale
+Miss E... So Addictive,music,,89,,by Missy Elliott
+Bloodmoon: I,music,,89,,by Converge
+RTJ4,music,,89,,by Run the Jewels
+Sawayama,music,,89,,by Rina Sawayama
+Wild God,music,,89,,by Nick Cave & the Bad Seeds
+Getting Killed,music,,89,,by Geese
+EELS,music,,89,,by Being Dead
+I Love You Jennifer B,music,,89,,by Jockstrap
+Black Origami,music,,89,,by Jlin
+Florist,music,,89,,by Florist
+Heart Under,music,,89,,by Just Mustard
+"Bachelor No. 2 (or, the last remains of the dodo)",music,,89,,by Aimee Mann
+All Mirrors,music,,89,,by Angel Olsen
+The Passionate Ones,music,,89,,by Nourished By Time
+I Got Heaven,music,,89,,by Mannequin Pussy
+Natural Brown Prom Queen,music,,89,,by Sudan Archives
+Nobody Loves You More,music,,89,,by Kim Deal
+Hit Me Hard and Soft,music,,89,,by Billie Eilish
+Feeding the Machine,music,,89,,by Binker & Moses
+For Those I Love,music,,89,,by For Those I Love
+Shortly After Takeoff,music,,89,,by BC Camplight
+Safe In The Hands Of Love,music,,89,,by Yves Tumor
+The Fade in Time,music,,89,,by Sam Lee
+Hand.Cannot.Erase.,music,,89,,by Steven Wilson
+Passage du Désir,music,,89,,by Johnny Blue Skies
+Coloring Book [Mixtape],music,,89,,by Chance the Rapper
+Big Fish Theory,music,,89,,by Vince Staples
+Ignorance,music,,89,,by The Weather Station
+The  Order of Time,music,,89,,by Valerie June
+Fed,music,,89,,by Plush
+Golden Hour,music,,89,,by Kacey Musgraves
+Chris,music,,89,,by Christine and the Queens
+Tigers Blood,music,,89,,by Waxahatchee
+A Seat at the Table,music,,89,,by Solange
+Last Exit,music,,89,,by Junior Boys
+Night Reign,music,,89,,by Arooj Aftab
+Pink Noise,music,,89,,by Laura Mvula
+When I Get Home,music,,89,,by Solange
+We Are Not Your Kind,music,,89,,by Slipknot
+The Idler Wheel Is Wiser than the Driver of the Screw and Whipping Cords Will Serve You More than Ropes Will Ever Do,music,,89,,by Fiona Apple
+Merriweather Post Pavilion,music,,89,,by Animal Collective
+False Lankum,music,,89,,by Lankum
+Songs For The Deaf,music,,89,,by Queens of the Stone Age
+Bright Green Field,music,,89,,by Squid
+Wearemonster,music,,89,,by Isolée
+Ali & Toumani,music,,89,,by Ali Farka Toure And Toumani Diabate
+All Hell,music,,89,,by Los Campesinos!
+They're Calling Me Home,music,,89,,by Rhiannon Giddens
+Antidepressants,music,,89,,by The London Suede
+All Born Screaming,music,,89,,by St. Vincent
+Hell Hath No Fury,music,,89,,by Clipse
+New Threats From The Soul,music,,89,,by Ryan Davis & The Roadhouse Band
+The Greatest Story Never Told,music,,89,,by Saigon
+Push Barman To Open Old Wounds,music,,89,,by Belle and Sebastian
+Sanguivore,music,,89,,by Creeper
+Romance,music,,89,,by Fontaines D.C.
+Riderless Horse,music,,89,,by Nina Nastasia
+"Women in Music, Pt. III",music,,89,,by HAIM
+I Am Not There Anymore,music,,89,,by The Clientele
+Same Trailer Different Park,music,,89,,by Kacey Musgraves
+We're New Again: A Reimagining by Makaya McCraven,music,,89,,by Gil Scott-Heron
+Chrome Dreams,music,,88,,by Neil Young
+folklore,music,,88,,by Taylor Swift
+The Complete Dirty South,music,,88,,by Drive-By Truckers
+Chutes Too Narrow,music,,88,,by The Shins
+"Yours, Mine & Ours",music,,88,,by Pernice Brothers
+To Be Kind,music,,88,,by Swans
+Valentine,music,,88,,by Snail Mail
+Essex Honey,music,,88,,by Blood Orange
+War Music,music,,88,,by Refused
+American Band,music,,88,,by Drive-By Truckers
+Hypermagic Mountain,music,,88,,by Lightning Bolt
+Only Built 4 Cuban Linx... Pt. II,music,,88,,by Raekwon
+Super Mario Odyssey,game,,97,"Adventure, Platformer",
+Baldur's Gate 3,game,,96,"Adventure, RPG",
+The Legend of Zelda: Breath of the Wild,game,,96,"Adventure, Action",
+Red Dead Redemption 2,game,,95,"Adventure, Third-Person Shooter",
+The Legend of Zelda: Tears of the Kingdom,game,,95,"Action, Adventure",
+Grand Theft Auto IV,game,,95,"Action, Adventure",
+Elden Ring,game,,95,"Action, RPG",
+Astro Bot,game,,95,Platformer,
+Hades II,game,,94,"Action, RPG, Roguelike",
+The Legend of Zelda: Tears of the Kingdom Nintendo Switch 2 Edition,game,,94,,
+The Last of Us Remastered,game,,94,Adventure,
+God of War,game,,94,"Action, RPG",
+Persona 5 Royal,game,,94,RPG,
+Metroid Prime Remastered,game,,94,"Action, First-Person Shooter",
+Persona 5,game,,94,RPG,
+Hades,game,,94,"Adventure, RPG, Action",
+Elden Ring: Shadow of the Erdtree,game,,94,"Action, RPG",
+Divinity: Original Sin 2,game,,93,"RPG, Turn-Based Strategy",
+Journey,game,,93,"Art, Adventure",
+The House in Fata Morgana,game,,93,"Interactive Story, Adventure",
+NieR: Automata Become as Gods Edition,game,,92,,
+Mario Kart 8 Deluxe,game,,92,Racing,
+Divinity: Original Sin 2 - Definitive Edition,game,,92,RPG,
+Celeste,game,,92,"Platformer, Action, Adventure",
+The Séance of Blake Manor,game,,91,,
+Street Fighter 6,game,,91,"Action, Fighting",
+Donkey Kong Bananza,game,,91,,
+NieR: Automata Game of the YoRHa Edition,game,,91,"Action, RPG",
+Pizza Tower,game,,91,"Platformer, Adventure",
+Caves of Qud,game,,91,,
+Asgard's Wrath 2,game,,91,"Action, Adventure",
+Inside,game,,91,"Puzzle, Adventure, Platformer",
+Hollow Knight: Silksong,game,,91,"Action, Platformer",
+Bloodborne,game,,91,Action,
+Destiny 2: The Final Shape,game,,91,"Action, First-Person Shooter",
+Satisfactory,game,,91,,
+Forza Horizon 3,game,,91,"Simulation, Racing",
+Dota 2,game,,91,"Action, Real-Time Strategy",
+Bayonetta 2,game,,91,Action,
+Split Fiction,game,,91,,
+Death Stranding 2: On the Beach,game,,90,,
+Tetris Effect,game,,90,"Strategy, Puzzle",
+Blue Prince,game,,90,,
+Dave the Diver,game,,90,"RPG, Roguelike",
+Jimmy and the Pulsating Mass,game,,90,RPG,
+Mark of the Ninja: Remastered,game,,90,"Action, Platformer",
+Hollow Knight,game,,89,"Action, Adventure, Platformer",
+Super Mario 3D World + Bowser's Fury,game,,89,Platformer,
+Paradigm,game,,89,Adventure,
+Monster Hunter Wilds,game,,89,,
+Return of the Obra Dinn,game,,89,"Art, Puzzle",
+Nier: Automata,game,,89,"Action, RPG",
+Path of the Midnight Sun,game,,89,"Turn-Based Strategy, RPG, Adventure",
+The Talos Principle 2: Road to Elysium,game,,89,"Adventure, Puzzle",
+Horizon Zero Dawn,game,,89,"Action, Adventure, RPG",
+Diablo III: Ultimate Evil Edition,game,,89,RPG,
+Neon White,game,,89,Action,
+Cobalt Core,game,,89,"Puzzle, Strategy, Turn-Based Strategy, RPG",
+Disco Elysium: The Final Cut,game,,89,RPG,
+Rogue Legacy 2,game,,89,"Roguelike, Action",
+Alan Wake 2,game,,89,"Horror, Survival, Adventure, Action",
+Freshly Frosted,game,,89,"Puzzle, Simulation, Strategy, Arcade",
+Dead Cells,game,,89,,
+Shovel Knight: Treasure Trove,game,,89,"Action, Platformer",
+Bayonetta 1+2,game,,89,"Action, RPG",
+Xenoblade Chronicles: Definitive Edition,game,,89,RPG,
+Guacamelee! Super Turbo Championship Edition,game,,89,Platformer,
+Cyberpunk 2077: Phantom Liberty,game,,89,"Action, Adventure, RPG, First-Person Shooter",
+Astro Bot Rescue Mission,game,,89,,
+Mission: It's Complicated,game,,89,Interactive Story,
+Swarm,game,,89,"Action, First-Person Shooter",
+Warstride Challenges,game,,89,"Action, First-Person Shooter",
+Spiritfall,game,,89,"Platformer, Adventure, Action",
+Horizon Forbidden West Complete Edition,game,,89,"Action, Adventure",
+Pillars of Eternity II: Deadfire,game,,89,RPG,
+Shin Megami Tensei V: Vengeance,game,,89,"Action, Adventure",
+Hi-Fi Rush,game,,89,Action,
+Mortal Kombat 11 Ultimate,game,,89,"Action, Fighting",
+Sea of Stars,game,,89,"Adventure, RPG, Turn-Based Strategy",
+Braid: Anniversary Edition,game,,89,"Platformer, Puzzle",

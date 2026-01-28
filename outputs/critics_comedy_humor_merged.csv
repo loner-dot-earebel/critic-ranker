@@ -1,5 +1,5 @@
-title,medium,year,critic_score,genres,artist,type,year_hint
-Singin' in the Rain,movie,1952.0,99,"Comedy, Musical, Romance",,,
-The Rules of the Game,movie,1939.0,99,"Comedy, Drama",,,
-Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,movie,1964.0,97,"Comedy, War",,,
-Modern Times,movie,1936.0,96,"Comedy, Drama, Romance",,,
+title,medium,year,critic_score,genres,artist
+Singin' in the Rain,movie,1952.0,99,"Comedy, Musical, Romance",
+The Rules of the Game,movie,1939.0,99,"Comedy, Drama",
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,movie,1964.0,97,"Comedy, War",
+Modern Times,movie,1936.0,96,"Comedy, Drama, Romance",
