@@ -47,10 +47,17 @@ def fetch_genres(album_url):
     soup = BeautifulSoup(r.text, "lxml")
 
     genres = set()
-    for g in soup.select(".genre"):
+
+    # Primary genres
+    for g in soup.select(".release_pri_genres a.genre"):
+        genres.add(g.text.strip())
+
+    # Secondary genres
+    for g in soup.select(".release_sec_genres a.genre"):
         genres.add(g.text.strip())
 
     return ", ".join(sorted(genres)) if genres else None
+
 
 def main():
     print("=== fetch_music_genres_rym.py STARTED ===")
