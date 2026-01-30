@@ -38,6 +38,11 @@ jobs:
       - name: Fetch Music
         run: python src/fetch_music_metacritic.py
 
+      # Step 5b: Fetch Music Genres (RYM)
+      - name: Fetch Music Genres (RYM)
+        run: python src/fetch_music_genres_rym.py
+
+
       # Step 6: Fetch Games
       - name: Fetch Games
         run: python src/fetch_games_opencritic.py
