@@ -1,0 +1,116 @@
+title,medium,year,critic_score,genres
+Citizen Kane,movie,1941.0,100,"Drama, Mystery"
+The Godfather,movie,1972.0,100,"Crime, Drama"
+Tokyo Story,movie,1953.0,100,Drama
+Lawrence of Arabia,movie,1962.0,100,"Adventure, Biography, Drama"
+Vertigo,movie,1958.0,100,"Mystery, Romance, Thriller"
+Rear Window,movie,1954.0,100,"Drama, Mystery, Thriller"
+Casablanca,movie,1942.0,100,"Drama, Romance, War"
+Singin' in the Rain,movie,1952.0,99,"Comedy, Musical, Romance"
+The Rules of the Game,movie,1939.0,99,"Comedy, Drama"
+Seven Samurai,movie,1954.0,98,"Action, Drama"
+Psycho,movie,1960.0,97,"Drama, Horror, Mystery"
+Parasite,movie,2019.0,97,"Drama, Thriller"
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,movie,1964.0,97,"Comedy, War"
+Modern Times,movie,1936.0,96,"Comedy, Drama, Romance"
+Spirited Away,movie,2001.0,96,"Animation, Adventure, Family"
+Schindler's List,movie,1993.0,95,"Biography, Drama, History"
+Pulp Fiction,movie,1994.0,95,"Crime, Drama"
+The Social Network,movie,2010.0,95,"Biography, Drama"
+Apocalypse Now,movie,1979.0,94,"Drama, Mystery, War"
+The Lord of the Rings: The Return of the King,movie,2003.0,94,"Adventure, Drama, Fantasy"
+There Will Be Blood,movie,2007.0,93,Drama
+Goodfellas,movie,1990.0,92,"Biography, Crime, Drama"
+No Country for Old Men,movie,2007.0,92,"Crime, Drama, Thriller"
+The Godfather Part II,movie,1974.0,90,"Crime, Drama"
+Raging Bull,movie,1980.0,90,"Biography, Drama, Sport"
+Star Wars: Episode IV - A New Hope,movie,1977.0,90,"Action, Adventure, Fantasy"
+Mad Max: Fury Road,movie,2015.0,90,"Action, Adventure, Sci-Fi"
+Mulholland Drive,movie,2001.0,87,"Drama, Mystery, Thriller"
+In the Mood for Love,movie,2000.0,87,"Drama, Romance"
+The Dark Knight,movie,2008.0,85,"Action, Crime, Drama"
+2001: A Space Odyssey,movie,1968.0,84,"Adventure, Sci-Fi"
+Blade Runner,movie,1982.0,84,"Action, Drama, Sci-Fi"
+The Shawshank Redemption,movie,1994.0,82,Drama
+Star Wars: Episode V - The Empire Strikes Back,movie,1980.0,82,"Action, Adventure, Fantasy"
+The Matrix,movie,1999.0,73,"Action, Sci-Fi"
+Super Mario Odyssey,game,,97,"Adventure, Platformer"
+Baldur's Gate 3,game,,96,"Adventure, RPG"
+The Legend of Zelda: Breath of the Wild,game,,96,"Adventure, Action"
+Red Dead Redemption 2,game,,95,"Adventure, Third-Person Shooter"
+The Legend of Zelda: Tears of the Kingdom,game,,95,"Action, Adventure"
+Grand Theft Auto IV,game,,95,"Action, Adventure"
+Elden Ring,game,,95,"Action, RPG"
+Astro Bot,game,,95,Platformer
+Hades II,game,,94,"Action, RPG, Roguelike"
+The Legend of Zelda: Tears of the Kingdom Nintendo Switch 2 Edition,game,,94,
+The Last of Us Remastered,game,,94,Adventure
+God of War,game,,94,"Action, RPG"
+Persona 5 Royal,game,,94,RPG
+Metroid Prime Remastered,game,,94,"Action, First-Person Shooter"
+Persona 5,game,,94,RPG
+Hades,game,,94,"Adventure, RPG, Action"
+Elden Ring: Shadow of the Erdtree,game,,94,"Action, RPG"
+Divinity: Original Sin 2,game,,93,"RPG, Turn-Based Strategy"
+Journey,game,,93,"Art, Adventure"
+The House in Fata Morgana,game,,93,"Interactive Story, Adventure"
+NieR: Automata Become as Gods Edition,game,,92,
+Mario Kart 8 Deluxe,game,,92,Racing
+Divinity: Original Sin 2 - Definitive Edition,game,,92,RPG
+Celeste,game,,92,"Platformer, Action, Adventure"
+The Séance of Blake Manor,game,,91,
+Street Fighter 6,game,,91,"Action, Fighting"
+Donkey Kong Bananza,game,,91,
+NieR: Automata Game of the YoRHa Edition,game,,91,"Action, RPG"
+Pizza Tower,game,,91,"Platformer, Adventure"
+Caves of Qud,game,,91,
+Asgard's Wrath 2,game,,91,"Action, Adventure"
+Inside,game,,91,"Puzzle, Adventure, Platformer"
+Hollow Knight: Silksong,game,,91,"Action, Platformer"
+Bloodborne,game,,91,Action
+Destiny 2: The Final Shape,game,,91,"Action, First-Person Shooter"
+Satisfactory,game,,91,
+Forza Horizon 3,game,,91,"Simulation, Racing"
+Dota 2,game,,91,"Action, Real-Time Strategy"
+Bayonetta 2,game,,91,Action
+Split Fiction,game,,91,
+Death Stranding 2: On the Beach,game,,90,
+Tetris Effect,game,,90,"Strategy, Puzzle"
+Blue Prince,game,,90,
+Dave the Diver,game,,90,"RPG, Roguelike"
+Jimmy and the Pulsating Mass,game,,90,RPG
+Mark of the Ninja: Remastered,game,,90,"Action, Platformer"
+Hollow Knight,game,,89,"Action, Adventure, Platformer"
+Super Mario 3D World + Bowser's Fury,game,,89,Platformer
+Paradigm,game,,89,Adventure
+Monster Hunter Wilds,game,,89,
+Return of the Obra Dinn,game,,89,"Art, Puzzle"
+Nier: Automata,game,,89,"Action, RPG"
+Path of the Midnight Sun,game,,89,"Turn-Based Strategy, RPG, Adventure"
+The Talos Principle 2: Road to Elysium,game,,89,"Adventure, Puzzle"
+Horizon Zero Dawn,game,,89,"Action, Adventure, RPG"
+Diablo III: Ultimate Evil Edition,game,,89,RPG
+Neon White,game,,89,Action
+Cobalt Core,game,,89,"Puzzle, Strategy, Turn-Based Strategy, RPG"
+Disco Elysium: The Final Cut,game,,89,RPG
+Rogue Legacy 2,game,,89,"Roguelike, Action"
+Alan Wake 2,game,,89,"Horror, Survival, Adventure, Action"
+Freshly Frosted,game,,89,"Puzzle, Simulation, Strategy, Arcade"
+Dead Cells,game,,89,
+Shovel Knight: Treasure Trove,game,,89,"Action, Platformer"
+Bayonetta 1+2,game,,89,"Action, RPG"
+Xenoblade Chronicles: Definitive Edition,game,,89,RPG
+Guacamelee! Super Turbo Championship Edition,game,,89,Platformer
+Cyberpunk 2077: Phantom Liberty,game,,89,"Action, Adventure, RPG, First-Person Shooter"
+Astro Bot Rescue Mission,game,,89,
+Mission: It's Complicated,game,,89,Interactive Story
+Swarm,game,,89,"Action, First-Person Shooter"
+Warstride Challenges,game,,89,"Action, First-Person Shooter"
+Spiritfall,game,,89,"Platformer, Adventure, Action"
+Horizon Forbidden West Complete Edition,game,,89,"Action, Adventure"
+Pillars of Eternity II: Deadfire,game,,89,RPG
+Shin Megami Tensei V: Vengeance,game,,89,"Action, Adventure"
+Hi-Fi Rush,game,,89,Action
+Mortal Kombat 11 Ultimate,game,,89,"Action, Fighting"
+Sea of Stars,game,,89,"Adventure, RPG, Turn-Based Strategy"
+Braid: Anniversary Edition,game,,89,"Platformer, Puzzle"
