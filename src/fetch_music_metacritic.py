@@ -34,24 +34,24 @@ def fetch_page(page):
     soup = BeautifulSoup(r.text, "lxml")
     rows = []
     for item in soup.select(".product_wrap"):
-    title_tag = item.select_one(".product_title a")
-    artist_tag = item.select_one(".product_artist")
-    score_tag = item.select_one(".metascore_w")
+        title_tag = item.select_one(".product_title a")
+        artist_tag = item.select_one(".product_artist")
+        score_tag = item.select_one(".metascore_w")
 
-    if title_tag and score_tag and score_tag.text.strip().isdigit():
-        title = title_tag.text.strip()
+        if title_tag and score_tag and score_tag.text.strip().isdigit():
+            title = title_tag.text.strip()
 
-        artist = None
-        if artist_tag:
-            artist = artist_tag.text.strip()
-            if artist.lower().startswith("by "):
-                artist = artist[3:].strip()
+            artist = None
+            if artist_tag:
+                artist = artist_tag.text.strip()
+                if artist.lower().startswith("by "):
+                    artist = artist[3:].strip()
 
-        rows.append({
-            "title": title,
-            "artist": artist,
-            "score": int(score_tag.text.strip())
-        })
+            rows.append({
+                "title": title,
+                "artist": artist,
+                "score": int(score_tag.text.strip())
+            })
 
     print(f"Items found on page {page}: {len(rows)}")
     return rows
