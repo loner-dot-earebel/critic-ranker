@@ -24,11 +24,23 @@ def load_music():
     if not MUSIC_CSV.exists():
         print(f"WARNING: Music CSV not found at {MUSIC_CSV}")
         return pd.DataFrame()
+
     df = pd.read_csv(MUSIC_CSV)
     df["medium"] = "music"
     df.rename(columns={"score": "critic_score"}, inplace=True)
-    df["critic_score"] = pd.to_numeric(df.get("critic_score", None), errors="coerce")
+    df["critic_score"] = pd.to_numeric(df["critic_score"], errors="coerce")
+
+    genres_file = Path("outputs/music_genres_rym.csv")
+    if genres_file.exists():
+        genres = pd.read_csv(genres_file)
+        df = df.merge(
+            genres,
+            on=["title", "artist"],
+            how="left"
+        )
+
     return df
+
 
 def load_games():
     if not GAMES_CSV.exists():
