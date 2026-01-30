@@ -56,6 +56,10 @@ def fetch_genres(album_url):
     for g in soup.select(".release_sec_genres a.genre"):
         genres.add(g.text.strip())
 
+    with open("debug_rym.html", "w", encoding="utf-8") as f:
+        f.write(r.text)
+
+
     return ", ".join(sorted(genres)) if genres else None
 
 
