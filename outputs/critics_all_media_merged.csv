@@ -1,116 +1,227 @@
-title,medium,year,critic_score,genres
-Citizen Kane,movie,1941.0,100,"Drama, Mystery"
-The Godfather,movie,1972.0,100,"Crime, Drama"
-Tokyo Story,movie,1953.0,100,Drama
-Lawrence of Arabia,movie,1962.0,100,"Adventure, Biography, Drama"
-Vertigo,movie,1958.0,100,"Mystery, Romance, Thriller"
-Rear Window,movie,1954.0,100,"Drama, Mystery, Thriller"
-Casablanca,movie,1942.0,100,"Drama, Romance, War"
-Singin' in the Rain,movie,1952.0,99,"Comedy, Musical, Romance"
-The Rules of the Game,movie,1939.0,99,"Comedy, Drama"
-Seven Samurai,movie,1954.0,98,"Action, Drama"
-Psycho,movie,1960.0,97,"Drama, Horror, Mystery"
-Parasite,movie,2019.0,97,"Drama, Thriller"
-Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,movie,1964.0,97,"Comedy, War"
-Modern Times,movie,1936.0,96,"Comedy, Drama, Romance"
-Spirited Away,movie,2001.0,96,"Animation, Adventure, Family"
-Schindler's List,movie,1993.0,95,"Biography, Drama, History"
-Pulp Fiction,movie,1994.0,95,"Crime, Drama"
-The Social Network,movie,2010.0,95,"Biography, Drama"
-Apocalypse Now,movie,1979.0,94,"Drama, Mystery, War"
-The Lord of the Rings: The Return of the King,movie,2003.0,94,"Adventure, Drama, Fantasy"
-There Will Be Blood,movie,2007.0,93,Drama
-Goodfellas,movie,1990.0,92,"Biography, Crime, Drama"
-No Country for Old Men,movie,2007.0,92,"Crime, Drama, Thriller"
-The Godfather Part II,movie,1974.0,90,"Crime, Drama"
-Raging Bull,movie,1980.0,90,"Biography, Drama, Sport"
-Star Wars: Episode IV - A New Hope,movie,1977.0,90,"Action, Adventure, Fantasy"
-Mad Max: Fury Road,movie,2015.0,90,"Action, Adventure, Sci-Fi"
-Mulholland Drive,movie,2001.0,87,"Drama, Mystery, Thriller"
-In the Mood for Love,movie,2000.0,87,"Drama, Romance"
-The Dark Knight,movie,2008.0,85,"Action, Crime, Drama"
-2001: A Space Odyssey,movie,1968.0,84,"Adventure, Sci-Fi"
-Blade Runner,movie,1982.0,84,"Action, Drama, Sci-Fi"
-The Shawshank Redemption,movie,1994.0,82,Drama
-Star Wars: Episode V - The Empire Strikes Back,movie,1980.0,82,"Action, Adventure, Fantasy"
-The Matrix,movie,1999.0,73,"Action, Sci-Fi"
-Super Mario Odyssey,game,,97,"Adventure, Platformer"
-Baldur's Gate 3,game,,96,"Adventure, RPG"
-The Legend of Zelda: Breath of the Wild,game,,96,"Adventure, Action"
-Red Dead Redemption 2,game,,95,"Adventure, Third-Person Shooter"
-The Legend of Zelda: Tears of the Kingdom,game,,95,"Action, Adventure"
-Grand Theft Auto IV,game,,95,"Action, Adventure"
-Elden Ring,game,,95,"Action, RPG"
-Astro Bot,game,,95,Platformer
-Hades II,game,,94,"Action, RPG, Roguelike"
-The Legend of Zelda: Tears of the Kingdom Nintendo Switch 2 Edition,game,,94,
-The Last of Us Remastered,game,,94,Adventure
-God of War,game,,94,"Action, RPG"
-Persona 5 Royal,game,,94,RPG
-Metroid Prime Remastered,game,,94,"Action, First-Person Shooter"
-Persona 5,game,,94,RPG
-Hades,game,,94,"Adventure, RPG, Action"
-Elden Ring: Shadow of the Erdtree,game,,94,"Action, RPG"
-Divinity: Original Sin 2,game,,93,"RPG, Turn-Based Strategy"
-Journey,game,,93,"Art, Adventure"
-The House in Fata Morgana,game,,93,"Interactive Story, Adventure"
-NieR: Automata Become as Gods Edition,game,,92,
-Mario Kart 8 Deluxe,game,,92,Racing
-Divinity: Original Sin 2 - Definitive Edition,game,,92,RPG
-Celeste,game,,92,"Platformer, Action, Adventure"
-The Séance of Blake Manor,game,,91,
-Street Fighter 6,game,,91,"Action, Fighting"
-Donkey Kong Bananza,game,,91,
-NieR: Automata Game of the YoRHa Edition,game,,91,"Action, RPG"
-Pizza Tower,game,,91,"Platformer, Adventure"
-Caves of Qud,game,,91,
-Asgard's Wrath 2,game,,91,"Action, Adventure"
-Inside,game,,91,"Puzzle, Adventure, Platformer"
-Hollow Knight: Silksong,game,,91,"Action, Platformer"
-Bloodborne,game,,91,Action
-Destiny 2: The Final Shape,game,,91,"Action, First-Person Shooter"
-Satisfactory,game,,91,
-Forza Horizon 3,game,,91,"Simulation, Racing"
-Dota 2,game,,91,"Action, Real-Time Strategy"
-Bayonetta 2,game,,91,Action
-Split Fiction,game,,91,
-Death Stranding 2: On the Beach,game,,90,
-Tetris Effect,game,,90,"Strategy, Puzzle"
-Blue Prince,game,,90,
-Dave the Diver,game,,90,"RPG, Roguelike"
-Jimmy and the Pulsating Mass,game,,90,RPG
-Mark of the Ninja: Remastered,game,,90,"Action, Platformer"
-Hollow Knight,game,,89,"Action, Adventure, Platformer"
-Super Mario 3D World + Bowser's Fury,game,,89,Platformer
-Paradigm,game,,89,Adventure
-Monster Hunter Wilds,game,,89,
-Return of the Obra Dinn,game,,89,"Art, Puzzle"
-Nier: Automata,game,,89,"Action, RPG"
-Path of the Midnight Sun,game,,89,"Turn-Based Strategy, RPG, Adventure"
-The Talos Principle 2: Road to Elysium,game,,89,"Adventure, Puzzle"
-Horizon Zero Dawn,game,,89,"Action, Adventure, RPG"
-Diablo III: Ultimate Evil Edition,game,,89,RPG
-Neon White,game,,89,Action
-Cobalt Core,game,,89,"Puzzle, Strategy, Turn-Based Strategy, RPG"
-Disco Elysium: The Final Cut,game,,89,RPG
-Rogue Legacy 2,game,,89,"Roguelike, Action"
-Alan Wake 2,game,,89,"Horror, Survival, Adventure, Action"
-Freshly Frosted,game,,89,"Puzzle, Simulation, Strategy, Arcade"
-Dead Cells,game,,89,
-Shovel Knight: Treasure Trove,game,,89,"Action, Platformer"
-Bayonetta 1+2,game,,89,"Action, RPG"
-Xenoblade Chronicles: Definitive Edition,game,,89,RPG
-Guacamelee! Super Turbo Championship Edition,game,,89,Platformer
-Cyberpunk 2077: Phantom Liberty,game,,89,"Action, Adventure, RPG, First-Person Shooter"
-Astro Bot Rescue Mission,game,,89,
-Mission: It's Complicated,game,,89,Interactive Story
-Swarm,game,,89,"Action, First-Person Shooter"
-Warstride Challenges,game,,89,"Action, First-Person Shooter"
-Spiritfall,game,,89,"Platformer, Adventure, Action"
-Horizon Forbidden West Complete Edition,game,,89,"Action, Adventure"
-Pillars of Eternity II: Deadfire,game,,89,RPG
-Shin Megami Tensei V: Vengeance,game,,89,"Action, Adventure"
-Hi-Fi Rush,game,,89,Action
-Mortal Kombat 11 Ultimate,game,,89,"Action, Fighting"
-Sea of Stars,game,,89,"Adventure, RPG, Turn-Based Strategy"
-Braid: Anniversary Edition,game,,89,"Platformer, Puzzle"
+title,medium,year,critic_score,genres,artist
+Citizen Kane,movie,1941.0,100,"Drama, Mystery",
+The Godfather,movie,1972.0,100,"Crime, Drama",
+Tokyo Story,movie,1953.0,100,Drama,
+Lawrence of Arabia,movie,1962.0,100,"Adventure, Biography, Drama",
+Vertigo,movie,1958.0,100,"Mystery, Romance, Thriller",
+Rear Window,movie,1954.0,100,"Drama, Mystery, Thriller",
+Casablanca,movie,1942.0,100,"Drama, Romance, War",
+Singin' in the Rain,movie,1952.0,99,"Comedy, Musical, Romance",
+The Rules of the Game,movie,1939.0,99,"Comedy, Drama",
+Seven Samurai,movie,1954.0,98,"Action, Drama",
+Psycho,movie,1960.0,97,"Drama, Horror, Mystery",
+Parasite,movie,2019.0,97,"Drama, Thriller",
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,movie,1964.0,97,"Comedy, War",
+Modern Times,movie,1936.0,96,"Comedy, Drama, Romance",
+Spirited Away,movie,2001.0,96,"Animation, Adventure, Family",
+Schindler's List,movie,1993.0,95,"Biography, Drama, History",
+Pulp Fiction,movie,1994.0,95,"Crime, Drama",
+The Social Network,movie,2010.0,95,"Biography, Drama",
+Apocalypse Now,movie,1979.0,94,"Drama, Mystery, War",
+The Lord of the Rings: The Return of the King,movie,2003.0,94,"Adventure, Drama, Fantasy",
+There Will Be Blood,movie,2007.0,93,Drama,
+Goodfellas,movie,1990.0,92,"Biography, Crime, Drama",
+No Country for Old Men,movie,2007.0,92,"Crime, Drama, Thriller",
+The Godfather Part II,movie,1974.0,90,"Crime, Drama",
+Raging Bull,movie,1980.0,90,"Biography, Drama, Sport",
+Star Wars: Episode IV - A New Hope,movie,1977.0,90,"Action, Adventure, Fantasy",
+Mad Max: Fury Road,movie,2015.0,90,"Action, Adventure, Sci-Fi",
+Mulholland Drive,movie,2001.0,87,"Drama, Mystery, Thriller",
+In the Mood for Love,movie,2000.0,87,"Drama, Romance",
+The Dark Knight,movie,2008.0,85,"Action, Crime, Drama",
+2001: A Space Odyssey,movie,1968.0,84,"Adventure, Sci-Fi",
+Blade Runner,movie,1982.0,84,"Action, Drama, Sci-Fi",
+The Shawshank Redemption,movie,1994.0,82,Drama,
+Star Wars: Episode V - The Empire Strikes Back,movie,1980.0,82,"Action, Adventure, Fantasy",
+The Matrix,movie,1999.0,73,"Action, Sci-Fi",
+Yeah Yeah Yeah,music,,74,,Cast
+"For The First Time, Again",music,,78,,Tyler Ballgame
+Can I Get A Pack Of Camel Lights?,music,,82,,Geologist
+I Used to Go To This Bar,music,,78,,Joyce Manor
+Wormslayer,music,,77,,Kula Shaker
+World's Gone Wrong,music,,81,,Lucinda Williams
+Megadeth,music,,60,,Megadeth
+How Did I Get Here?,music,,69,,Louis Tomlinson
+Dead Dads Club,music,,71,,Dead Dads Club
+No More Like This,music,,82,,PVA
+"JUNGLIST! Old Skool Ragga, D&B, Jungle 1993-95",music,,87,,Various Artists
+Scenes From Above,music,,77,,Julian Lage
+Death In The Business Of Whaling,music,,79,,Searows
+Vacancy,music,,71,,Ari Lennox
+Sidings,music,,78,,Craven Faults
+Your Picture,music,,84,,The Sha La Das
+The Demise Of Planet X,music,,76,,Sleaford Mods
+Valentine,music,,79,,Courtney Marie Andrews
+Tragic Magic,music,,83,,Julianna Barwick & Mary Lattimore
+Off The Fence,music,,86,,The James Hunter Six
+Don't Be Dumb,music,,69,,A$AP Rocky
+BRITPOP,music,,74,,Robbie Williams
+locket,music,,72,,Madison Beer
+Can't Take My Story Away,music,,82,,Elles Bailey
+Xiu Mutha Fuckin' Xiu: Vol. 1,music,,81,,Xiu Xiu
+Dreamer+,music,,75,,Sassy 009
+Jana Horn,music,,82,,Jana Horn
+SCALA!!! (Original Music By Barry Adamson),music,,74,,Barry Adamson
+So Much Country ‘Till We Get There [EP],music,,82,,Westside Cowboy
+Secret Love,music,,88,,Dry Cleaning
+Quicksand Heart,music,,72,,Jenny On Holiday
+Selling A Vibe,music,,77,,The Cribs
+With Heaven On Top,music,,74,,Zach Bryan
+Ferrum Sidereum,music,,78,,Zu
+III,music,,84,,Pullman
+Desert So Green,music,,77,,Winged Wheel
+Holo Boy,music,,82,,This Is Lorelei
+Lightning Might Strike,music,,84,,Juliana Hatfield
+Wish You Were Here 50 [Box Set],music,,100,,Pink Floyd
+Konk If You're Lonely: Fat White Family Live At Konk Studios,music,,70,,Fat White Family
+Light-Years,music,,71,,Nas & DJ Premier
+WHAT HAPPENED TO THE STREETS?,music,,56,,21 Savage
+CONFLICT DLC,music,,78,,HEALTH
+Unclouded,music,,77,,Melody's Echo Chamber
+Blizzard,music,,92,,Dove Ellis
+Spíra,music,,80,,Ólöf Arnalds
+Memento Mori: Mexico City,music,,85,,Depeche Mode
+Live God,music,,88,,Nick Cave & the Bad Seeds
+MASQUERADE,music,,75,,Thomas Raggi
+Mercado 48,music,,79,,Daniel Knox
+Long March Through The Jazz Age,music,,82,,The Saints
+Tranquilizer,music,,80,,Oneohtrix Point Never
+Anthology Collection (2025 Edition),music,,82,,The Beatles
+Anthology 4,music,,86,,The Beatles
+Parader,music,,82,,Keaton Henson
+Cabin In The Sky,music,,81,,De La Soul
+Balloon Balloon Balloon,music,,84,,Sharp Pins
+Bang,music,,80,,Iona Zajac
+England Screaming,music,,85,,Wreckless Eric
+Changes In Air,music,,78,,Kara-Lis Coverdale
+Implosion,music,,83,,The Bug vs Ghost Dubs
+Woman Of Faces,music,,78,,Celeste
+EUSEXUA Afterglow,music,,77,,FKA twigs
+EVERYONE'S A STAR!,music,,77,,5 Seconds of Summer
+Vesper Sparrow,music,,84,,JJJJJerome Ellis
+The Parlour,music,,84,,Picture Parlour
+Chin Up Buttercup,music,,82,,Austra
+Watch It Die,music,,73,,Home Front
+Finally Over It,music,,75,,Summer Walker
+AVTT/PTTN,music,,72,,AVTT/PTTN
+Rebuilding (Original Motion Picture Soundtrack),music,,81,,Jake Xerxes Fussell & James Elkington
+The Sherlock Holmes Rhythm 'n' Beat Vernacular,music,,77,,Thee Headcoats
+Man-Trap,music,,82,,Thee Headcoatees
+Holy Island,music,,74,,Sister Ray Davies
+Black And Blue [Super Deluxe] [Box Set],music,,82,,The Rolling Stones
+All Washed Up,music,,77,,Cheap Trick
+Stardust,music,,75,,Danny Brown
+Lux,music,,95,,Rosalía
+Pequena Vertigem De Amor,music,,82,,Sessa
+Life Is Beautiful! Life Is Beautiful! Life Is Beautiful!,music,,77,,The Dears
+1985: The Miracle Year [Box Set],music,,91,,Hüsker Dü
+WINGS,music,,88,,Paul McCartney & Wings
+A Man For All Seasons,music,,84,,Insecure Men
+Workin' Man: Willie Sings Merle,music,,84,,Willie Nelson
+A Jackal's Wedding,music,,80,,Westerman
+Sad And Beautiful World,music,,90,,Mavis Staples
+A Bridge to Far,music,,81,,Midlake
+Liquorice,music,,81,,Hatchie
+Daylight Daylight,music,,84,,Steve Gunn
+Cosplay,music,,83,,Sorry
+Mercy,music,,79,,Armand Hammer & The Alchemist
+Through This Fire Across From Peter Balkan,music,,80,,The Mountain Goats
+Small Talk,music,,73,,Whitney
+Night Light,music,,65,,White Lies
+Seventy,music,,84,,Paul Kelly
+Love And Fortune,music,,79,,Stella Donnelly
+How You Been,music,,84,,SML
+Everybody Scream,music,,81,,Florence + the Machine
+Thick Rich And Delicious,music,,80,,Guided by Voices
+We Are Love,music,,77,,The Charlatans UK
+"Bootleg Series Vol. 18: Through The Open Window, 1956-1963",music,,94,,Bob Dylan
+a little death,music,,78,,Claire Rousay
+Again,music,,77,,The Belair Lip Bombs
+ICONOCLASTS,music,,88,,Anna von Hausswolff
+Sanguivore II: Mistress Of Death,music,,84,,Creeper
+FEVEREATEN,music,,77,,Witch Fever
+Snocaps,music,,87,,Snocaps
+In The Earth Again,music,,82,,Chat Pile & Hayden Pedigo
+Tremor,music,,81,,Daniel Avery
+Night CRIÚ,music,,81,,Hilary Woods
+hooke’s law,music,,81,,keiyaA
+Super Mario Odyssey,game,,97,"Adventure, Platformer",
+Baldur's Gate 3,game,,96,"Adventure, RPG",
+The Legend of Zelda: Breath of the Wild,game,,96,"Adventure, Action",
+Red Dead Redemption 2,game,,95,"Adventure, Third-Person Shooter",
+The Legend of Zelda: Tears of the Kingdom,game,,95,"Action, Adventure",
+Grand Theft Auto IV,game,,95,"Action, Adventure",
+Elden Ring,game,,95,"Action, RPG",
+Astro Bot,game,,95,Platformer,
+Hades II,game,,94,"Action, RPG, Roguelike",
+The Legend of Zelda: Tears of the Kingdom Nintendo Switch 2 Edition,game,,94,,
+The Last of Us Remastered,game,,94,Adventure,
+God of War,game,,94,"Action, RPG",
+Persona 5 Royal,game,,94,RPG,
+Metroid Prime Remastered,game,,94,"Action, First-Person Shooter",
+Persona 5,game,,94,RPG,
+Hades,game,,94,"Adventure, RPG, Action",
+Elden Ring: Shadow of the Erdtree,game,,94,"Action, RPG",
+Divinity: Original Sin 2,game,,93,"RPG, Turn-Based Strategy",
+Journey,game,,93,"Art, Adventure",
+The House in Fata Morgana,game,,93,"Interactive Story, Adventure",
+NieR: Automata Become as Gods Edition,game,,92,,
+Mario Kart 8 Deluxe,game,,92,Racing,
+Divinity: Original Sin 2 - Definitive Edition,game,,92,RPG,
+Celeste,game,,92,"Platformer, Action, Adventure",
+The Séance of Blake Manor,game,,91,,
+Street Fighter 6,game,,91,"Action, Fighting",
+Donkey Kong Bananza,game,,91,,
+NieR: Automata Game of the YoRHa Edition,game,,91,"Action, RPG",
+Pizza Tower,game,,91,"Platformer, Adventure",
+Caves of Qud,game,,91,,
+Asgard's Wrath 2,game,,91,"Action, Adventure",
+Inside,game,,91,"Puzzle, Adventure, Platformer",
+Hollow Knight: Silksong,game,,91,"Action, Platformer",
+Bloodborne,game,,91,Action,
+Destiny 2: The Final Shape,game,,91,"Action, First-Person Shooter",
+Satisfactory,game,,91,,
+Forza Horizon 3,game,,91,"Simulation, Racing",
+Dota 2,game,,91,"Action, Real-Time Strategy",
+Bayonetta 2,game,,91,Action,
+Split Fiction,game,,91,,
+Death Stranding 2: On the Beach,game,,90,,
+Tetris Effect,game,,90,"Strategy, Puzzle",
+Blue Prince,game,,90,,
+Dave the Diver,game,,90,"RPG, Roguelike",
+Jimmy and the Pulsating Mass,game,,90,RPG,
+Mark of the Ninja: Remastered,game,,90,"Action, Platformer",
+Hollow Knight,game,,89,"Action, Adventure, Platformer",
+Super Mario 3D World + Bowser's Fury,game,,89,Platformer,
+Paradigm,game,,89,Adventure,
+Monster Hunter Wilds,game,,89,,
+Return of the Obra Dinn,game,,89,"Art, Puzzle",
+Nier: Automata,game,,89,"Action, RPG",
+Path of the Midnight Sun,game,,89,"Turn-Based Strategy, RPG, Adventure",
+The Talos Principle 2: Road to Elysium,game,,89,"Adventure, Puzzle",
+Horizon Zero Dawn,game,,89,"Action, Adventure, RPG",
+Diablo III: Ultimate Evil Edition,game,,89,RPG,
+Neon White,game,,89,Action,
+Cobalt Core,game,,89,"Puzzle, Strategy, Turn-Based Strategy, RPG",
+Disco Elysium: The Final Cut,game,,89,RPG,
+Rogue Legacy 2,game,,89,"Roguelike, Action",
+Alan Wake 2,game,,89,"Horror, Survival, Adventure, Action",
+Freshly Frosted,game,,89,"Puzzle, Simulation, Strategy, Arcade",
+Dead Cells,game,,89,,
+Shovel Knight: Treasure Trove,game,,89,"Action, Platformer",
+Bayonetta 1+2,game,,89,"Action, RPG",
+Xenoblade Chronicles: Definitive Edition,game,,89,RPG,
+Guacamelee! Super Turbo Championship Edition,game,,89,Platformer,
+Cyberpunk 2077: Phantom Liberty,game,,89,"Action, Adventure, RPG, First-Person Shooter",
+Astro Bot Rescue Mission,game,,89,,
+Mission: It's Complicated,game,,89,Interactive Story,
+Swarm,game,,89,"Action, First-Person Shooter",
+Warstride Challenges,game,,89,"Action, First-Person Shooter",
+Spiritfall,game,,89,"Platformer, Adventure, Action",
+Horizon Forbidden West Complete Edition,game,,89,"Action, Adventure",
+Pillars of Eternity II: Deadfire,game,,89,RPG,
+Shin Megami Tensei V: Vengeance,game,,89,"Action, Adventure",
+Hi-Fi Rush,game,,89,Action,
+Mortal Kombat 11 Ultimate,game,,89,"Action, Fighting",
+Sea of Stars,game,,89,"Adventure, RPG, Turn-Based Strategy",
+Braid: Anniversary Edition,game,,89,"Platformer, Puzzle",
