@@ -30,31 +30,42 @@ def fetch_page(page):
     r = fetch_with_retries(url)
     if r is None:
         return []
+
     from bs4 import BeautifulSoup
     soup = BeautifulSoup(r.text, "lxml")
+
     rows = []
-    for item in soup.select(".product_wrap"):
-        title_tag = item.select_one(".product_title a")
-        artist_tag = item.select_one(".product_artist")
+
+    # Each album is contained in a scored item
+    for item in soup.select("td.clamp-summary-wrap"):
+        title_tag = item.select_one("a.title")
+        artist_tag = item.select_one(".artist")
         score_tag = item.select_one(".metascore_w")
 
-        if title_tag and score_tag and score_tag.text.strip().isdigit():
-            title = title_tag.text.strip()
+        if not title_tag or not score_tag:
+            continue
 
-            artist = None
-            if artist_tag:
-                artist = artist_tag.text.strip()
-                if artist.lower().startswith("by "):
-                    artist = artist[3:].strip()
+        score_text = score_tag.text.strip()
+        if not score_text.isdigit():
+            continue
 
-            rows.append({
-                "title": title,
-                "artist": artist,
-                "score": int(score_tag.text.strip())
-            })
+        title = title_tag.text.strip()
+
+        artist = None
+        if artist_tag:
+            artist = artist_tag.text.strip()
+            if artist.lower().startswith("by "):
+                artist = artist[3:].strip()
+
+        rows.append({
+            "title": title,
+            "artist": artist,
+            "score": int(score_text)
+        })
 
     print(f"Items found on page {page}: {len(rows)}")
     return rows
+
 
 def main():
     print("=== fetch_music_metacritic.py STARTED ===")
