@@ -19,11 +19,12 @@ DEBUG_FILE = Path("debug_rym.html")
 # Search DuckDuckGo for RYM release page
 # -------------------------
 def search_rym(title, artist):
-    query = f'site:rateyourmusic.com/release "{title}" "{artist}"'
-    url = f"https://duckduckgo.com/html/?q={quote_plus(query)}"
+    query = f"site:rateyourmusic.com/release/album {artist} {title}"
+    url = "https://duckduckgo.com/html/"
+    params = {"q": query}
 
     try:
-        r = requests.get(url, headers=HEADERS, timeout=10)
+        r = requests.get(url, headers=HEADERS, params=params, timeout=10)
         r.raise_for_status()
     except requests.RequestException:
         return None
@@ -32,10 +33,11 @@ def search_rym(title, artist):
 
     for a in soup.select("a.result__a"):
         href = a.get("href", "")
-        if "rateyourmusic.com/release" in href:
+        if "rateyourmusic.com/release/album" in href:
             return href
 
     return None
+
 
 # -------------------------
 # Extract genres from album page
