@@ -15,28 +15,55 @@ HEADERS = {
 
 DEBUG_FILE = Path("debug_rym.html")
 
-# -------------------------
-# Search DuckDuckGo for RYM release page
-# -------------------------
-def search_rym(title, artist):
-    query = f"site:rateyourmusic.com/release/album {artist} {title}"
-    url = "https://duckduckgo.com/html/"
-    params = {"q": query}
+def search_musicbrainz(title, artist):
+    url = "https://musicbrainz.org/ws/2/release/"
+    params = {
+        "query": f'release:"{title}" AND artist:"{artist}"',
+        "fmt": "json",
+        "limit": 1
+    }
 
     try:
         r = requests.get(url, headers=HEADERS, params=params, timeout=10)
         r.raise_for_status()
-    except requests.RequestException:
+        data = r.json()
+    except Exception:
         return None
 
-    soup = BeautifulSoup(r.text, "lxml")
+    releases = data.get("releases", [])
+    if not releases:
+        return None
 
-    for a in soup.select("a.result__a"):
-        href = a.get("href", "")
-        if "rateyourmusic.com/release/album" in href:
-            return href
+    return releases[0].get("id")
+    
+def get_rym_from_mb(release_id):
+    url = f"https://musicbrainz.org/ws/2/release/{release_id}"
+    params = {"inc": "url-rels", "fmt": "json"}
+
+    try:
+        r = requests.get(url, headers=HEADERS, params=params, timeout=10)
+        r.raise_for_status()
+        data = r.json()
+    except Exception:
+        return None
+
+    for rel in data.get("relations", []):
+        if rel.get("type") == "rateyourmusic":
+            return rel.get("url", {}).get("resource")
 
     return None
+
+
+# -------------------------
+# Search DuckDuckGo for RYM release page
+# -------------------------
+def search_rym(title, artist):
+    mb_id = search_musicbrainz(title, artist)
+    if not mb_id:
+        return None
+
+    return get_rym_from_mb(mb_id)
+
 
 
 # -------------------------
