@@ -23,7 +23,7 @@ def search_rym(title, artist):
     url = f"https://duckduckgo.com/html/?q={quote_plus(query)}"
 
     try:
-        r = requests.get(url, headers=HEADERS, timeout=15)
+        r = requests.get(url, headers=HEADERS, timeout=10)
         r.raise_for_status()
     except requests.RequestException:
         return None
@@ -42,7 +42,7 @@ def search_rym(title, artist):
 # -------------------------
 def fetch_genres(album_url):
     try:
-        r = requests.get(album_url, headers=HEADERS, timeout=15)
+        r = requests.get(album_url, headers=HEADERS, timeout=10)
         r.raise_for_status()
     except requests.RequestException:
         return None
@@ -100,7 +100,7 @@ def main():
             "genres": genres
         })
 
-        time.sleep(2)
+        time.sleep(0.3)
 
     if rows:
         df = pd.DataFrame(rows)
