@@ -35,24 +35,24 @@ The Shawshank Redemption,movie,1994.0,82,Drama,
 Star Wars: Episode V - The Empire Strikes Back,movie,1980.0,82,"Action, Adventure, Fantasy",
 The Matrix,movie,1999.0,73,"Action, Sci-Fi",
 Singin' To An Empty Chair,music,,85,,Ratboys
-URGH,music,,84,,"Mandy, Indiana"
+URGH,music,,87,,"Mandy, Indiana"
 EXPO,music,,77,,Ulrika Spacek
-Butterfly,music,,79,,Daphni
+Butterfly,music,,81,,Daphni
 Move On With The Year,music,,80,,Alice Costelloe
-Sunlight Echoes,music,,74,,Whitelands
 Yeah Yeah Yeah,music,,68,,Cast
 "For The First Time, Again",music,,76,,Tyler Ballgame
-Can I Get A Pack Of Camel Lights?,music,,79,,Geologist
+Can I Get A Pack Of Camel Lights?,music,,80,,Geologist
 I Used to Go To This Bar,music,,78,,Joyce Manor
 Wormslayer,music,,77,,Kula Shaker
 Attitude Adjustment,music,,68,,Buzzcocks
 Can Such Delightful Times Go On Forever?,music,,80,,The Soft Pink Truth
-"low clouds hang, this land is on fire",music,,78,,Tashi Dorji
-Not Here Not Gone,music,,77,,Blackwater Holylight
+"low clouds hang, this land is on fire",music,,79,,Tashi Dorji
+Not Here Not Gone,music,,79,,Blackwater Holylight
 Kiss The Beast,music,,71,,Sébastien Tellier
 One Mississippi,music,,84,,Eric Bibb
-My Ghosts Go Ghost,music,,77,,By Storm
+My Ghosts Go Ghost,music,,78,,By Storm
 When A Flower Doesn't Grow,music,,88,,Softcult
+Sunlight Echoes,music,,74,,Whitelands
 World's Gone Wrong,music,,82,,Lucinda Williams
 Megadeth,music,,60,,Megadeth
 How Did I Get Here?,music,,69,,Louis Tomlinson
@@ -70,7 +70,7 @@ Valentine,music,,80,,Courtney Marie Andrews
 Tragic Magic,music,,83,,Julianna Barwick & Mary Lattimore
 Off The Fence,music,,86,,The James Hunter Six
 Don't Be Dumb,music,,71,,A$AP Rocky
-BRITPOP,music,,73,,Robbie Williams
+BRITPOP,music,,75,,Robbie Williams
 locket,music,,72,,Madison Beer
 Can't Take My Story Away,music,,82,,Elles Bailey
 Xiu Mutha Fuckin' Xiu: Vol. 1,music,,81,,Xiu Xiu
@@ -100,6 +100,7 @@ Memento Mori: Mexico City,music,,85,,Depeche Mode
 Live God,music,,88,,Nick Cave & the Bad Seeds
 MASQUERADE,music,,75,,Thomas Raggi
 Mercado 48,music,,79,,Daniel Knox
+There Is Nothing In The Dark That Isn't There In The Light,music,,63,,Tom Smith
 Long March Through The Jazz Age,music,,82,,The Saints
 "Selenites, Selenites!",music,,81,,Jimi Tenor Band
 Tranquilizer,music,,80,,Oneohtrix Point Never
@@ -188,11 +189,11 @@ Forza Horizon 3,game,,91,"Simulation, Racing",
 Dota 2,game,,91,"Action, Real-Time Strategy",
 Bayonetta 2,game,,91,Action,
 Split Fiction,game,,91,,
+Jimmy and the Pulsating Mass,game,,90,RPG,
 Death Stranding 2: On the Beach,game,,90,,
 Tetris Effect,game,,90,"Strategy, Puzzle",
 Blue Prince,game,,90,,
 Dave the Diver,game,,90,"RPG, Roguelike",
-Jimmy and the Pulsating Mass,game,,90,RPG,
 Mark of the Ninja: Remastered,game,,90,"Action, Platformer",
 Hollow Knight,game,,89,"Action, Adventure, Platformer",
 Super Mario 3D World + Bowser's Fury,game,,89,Platformer,
