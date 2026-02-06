@@ -4,6 +4,7 @@ import time
 import re
 from pathlib import Path
 from bs4 import BeautifulSoup
+from urllib.parse import quote_plus
 
 INPUT_MUSIC = Path("outputs/music_metacritic_ranked.csv")
 OUTPUT_GENRES = Path("outputs/music_genres_rym.csv")
@@ -12,57 +13,55 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 }
 
-def normalize(text):
-    if not isinstance(text, str):
-        return ""
-    text = text.lower()
-    text = re.sub(r"[^a-z0-9 ]+", "", text)
-    return re.sub(r"\s+", " ", text).strip()
+DEBUG_FILE = Path("debug_rym.html")
 
+# -------------------------
+# Search DuckDuckGo for RYM release page
+# -------------------------
 def search_rym(title, artist):
-    query = f"{title} {artist}".strip()
-    url = "https://rateyourmusic.com/search"
-    params = {"searchterm": query, "type": "l"}
+    query = f'site:rateyourmusic.com/release "{title}" "{artist}"'
+    url = f"https://duckduckgo.com/html/?q={quote_plus(query)}"
 
     try:
-        r = requests.get(url, headers=HEADERS, params=params, timeout=10)
+        r = requests.get(url, headers=HEADERS, timeout=15)
         r.raise_for_status()
     except requests.RequestException:
         return None
 
     soup = BeautifulSoup(r.text, "lxml")
-    result = soup.select_one(".searchpage a")
-    if not result or not result.get("href"):
-        return None
 
-    return "https://rateyourmusic.com" + result["href"]
+    for a in soup.select("a.result__a"):
+        href = a.get("href", "")
+        if "rateyourmusic.com/release" in href:
+            return href
 
+    return None
+
+# -------------------------
+# Extract genres from album page
+# -------------------------
 def fetch_genres(album_url):
     try:
-        r = requests.get(album_url, headers=HEADERS, timeout=10)
+        r = requests.get(album_url, headers=HEADERS, timeout=15)
         r.raise_for_status()
     except requests.RequestException:
         return None
+
+    # Always dump first page for debugging
+    DEBUG_FILE.write_text(r.text, encoding="utf-8")
 
     soup = BeautifulSoup(r.text, "lxml")
 
     genres = set()
 
-    # Primary genres
-    for g in soup.select(".release_pri_genres a.genre"):
-        genres.add(g.text.strip())
-
-    # Secondary genres
-    for g in soup.select(".release_sec_genres a.genre"):
-        genres.add(g.text.strip())
-
-    with open("debug_rym.html", "w", encoding="utf-8") as f:
-        f.write(r.text)
-
+    for g in soup.select("a.genre"):
+        text = g.text.strip()
+        if text:
+            genres.add(text)
 
     return ", ".join(sorted(genres)) if genres else None
 
-
+# -------------------------
 def main():
     print("=== fetch_music_genres_rym.py STARTED ===")
 
@@ -83,10 +82,15 @@ def main():
         print(f"RYM lookup: {title} – {artist}")
 
         album_url = search_rym(title, artist)
+        print(f"  Found URL: {album_url}")
+
         if not album_url:
             continue
 
         genres = fetch_genres(album_url)
+
+        print(f"  Genres: {genres}")
+
         if not genres:
             continue
 
@@ -96,7 +100,7 @@ def main():
             "genres": genres
         })
 
-        time.sleep(2)  # very polite
+        time.sleep(2)
 
     if rows:
         df = pd.DataFrame(rows)
@@ -105,5 +109,6 @@ def main():
     else:
         print("No RYM genres collected")
 
+# -------------------------
 if __name__ == "__main__":
     main()
