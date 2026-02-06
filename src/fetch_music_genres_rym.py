@@ -15,10 +15,25 @@ HEADERS = {
 
 DEBUG_FILE = Path("debug_rym.html")
 
+def mb_clean(text):
+    if not isinstance(text, str):
+        return ""
+    text = text.lower()
+    text = re.sub(r"\(.*?\)", "", text)     # remove parentheses
+    text = re.sub(r"\[.*?\]", "", text)     # remove brackets
+    text = re.sub(r"[^a-z0-9 ]+", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
 def search_musicbrainz(title, artist):
+    title = mb_clean(title)
+    artist = mb_clean(artist)
+
+    query = f'release:{title} AND artist:{artist}'
+
     url = "https://musicbrainz.org/ws/2/release/"
     params = {
-        "query": f'release:"{title}" AND artist:"{artist}"',
+        "query": query,
         "fmt": "json",
         "limit": 1
     }
@@ -34,7 +49,8 @@ def search_musicbrainz(title, artist):
     if not releases:
         return None
 
-    return releases[0].get("id")
+    return releases[0]["id"]
+
     
 def get_rym_from_mb(release_id):
     url = f"https://musicbrainz.org/ws/2/release/{release_id}"
@@ -59,10 +75,16 @@ def get_rym_from_mb(release_id):
 # -------------------------
 def search_rym(title, artist):
     mb_id = search_musicbrainz(title, artist)
+    print(f"  MusicBrainz ID: {mb_id}")
+
     if not mb_id:
         return None
 
-    return get_rym_from_mb(mb_id)
+    rym = get_rym_from_mb(mb_id)
+    print(f"  RYM from MB: {rym}")
+
+    return rym
+
 
 
 
