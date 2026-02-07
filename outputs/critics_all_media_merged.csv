@@ -34,16 +34,17 @@ Blade Runner,movie,1982.0,84,"Action, Drama, Sci-Fi",
 The Shawshank Redemption,movie,1994.0,82,Drama,
 Star Wars: Episode V - The Empire Strikes Back,movie,1980.0,82,"Action, Adventure, Fantasy",
 The Matrix,movie,1999.0,73,"Action, Sci-Fi",
-Singin' To An Empty Chair,music,,85,,Ratboys
+Singin' To An Empty Chair,music,,86,,Ratboys
 URGH,music,,87,,"Mandy, Indiana"
 EXPO,music,,77,,Ulrika Spacek
 Butterfly,music,,81,,Daphni
 Move On With The Year,music,,80,,Alice Costelloe
+Laughter In Summer,music,,85,,Beverly Glenn-Copeland
 Yeah Yeah Yeah,music,,68,,Cast
 "For The First Time, Again",music,,76,,Tyler Ballgame
 Can I Get A Pack Of Camel Lights?,music,,80,,Geologist
 I Used to Go To This Bar,music,,78,,Joyce Manor
-Wormslayer,music,,77,,Kula Shaker
+Wormslayer,music,,78,,Kula Shaker
 Attitude Adjustment,music,,68,,Buzzcocks
 Can Such Delightful Times Go On Forever?,music,,80,,The Soft Pink Truth
 "low clouds hang, this land is on fire",music,,79,,Tashi Dorji
@@ -128,27 +129,6 @@ Man-Trap,music,,82,,Thee Headcoatees
 Holy Island,music,,74,,Sister Ray Davies
 Black And Blue [Super Deluxe] [Box Set],music,,82,,The Rolling Stones
 All Washed Up,music,,77,,Cheap Trick
-Stardust,music,,75,,Danny Brown
-Lux,music,,95,,Rosalía
-Pequena Vertigem De Amor,music,,82,,Sessa
-Life Is Beautiful! Life Is Beautiful! Life Is Beautiful!,music,,77,,The Dears
-1985: The Miracle Year [Box Set],music,,91,,Hüsker Dü
-WINGS,music,,88,,Paul McCartney & Wings
-A Man For All Seasons,music,,84,,Insecure Men
-Workin' Man: Willie Sings Merle,music,,84,,Willie Nelson
-A Jackal's Wedding,music,,80,,Westerman
-Sad And Beautiful World,music,,90,,Mavis Staples
-A Bridge to Far,music,,81,,Midlake
-Liquorice,music,,81,,Hatchie
-Daylight Daylight,music,,84,,Steve Gunn
-Cosplay,music,,83,,Sorry
-Mercy,music,,79,,Armand Hammer & The Alchemist
-Through This Fire Across From Peter Balkan,music,,80,,The Mountain Goats
-Small Talk,music,,73,,Whitney
-Night Light,music,,65,,White Lies
-Seventy,music,,84,,Paul Kelly
-Love And Fortune,music,,79,,Stella Donnelly
-How You Been,music,,84,,SML
 Super Mario Odyssey,game,,97,"Adventure, Platformer",
 Baldur's Gate 3,game,,96,"Adventure, RPG",
 The Legend of Zelda: Breath of the Wild,game,,96,"Adventure, Action",
@@ -189,6 +169,7 @@ Forza Horizon 3,game,,91,"Simulation, Racing",
 Dota 2,game,,91,"Action, Real-Time Strategy",
 Bayonetta 2,game,,91,Action,
 Split Fiction,game,,91,,
+Castlevania Dominus Collection,game,,90,"RPG, Action",
 Jimmy and the Pulsating Mass,game,,90,RPG,
 Death Stranding 2: On the Beach,game,,90,,
 Tetris Effect,game,,90,"Strategy, Puzzle",
@@ -208,7 +189,7 @@ Diablo III: Ultimate Evil Edition,game,,89,RPG,
 Neon White,game,,89,Action,
 Cobalt Core,game,,89,"Puzzle, Strategy, Turn-Based Strategy, RPG",
 Disco Elysium: The Final Cut,game,,89,RPG,
-Rogue Legacy 2,game,,89,"Roguelike, Action",
+DUSK,game,,89,"Action, First-Person Shooter",
 Alan Wake 2,game,,89,"Horror, Survival, Adventure, Action",
 Freshly Frosted,game,,89,"Puzzle, Simulation, Strategy, Arcade",
 Dead Cells,game,,89,,
@@ -228,4 +209,3 @@ Shin Megami Tensei V: Vengeance,game,,89,"Action, Adventure",
 Hi-Fi Rush,game,,89,Action,
 Mortal Kombat 11 Ultimate,game,,89,"Action, Fighting",
 Sea of Stars,game,,89,"Adventure, RPG, Turn-Based Strategy",
-Braid: Anniversary Edition,game,,89,"Platformer, Puzzle",
