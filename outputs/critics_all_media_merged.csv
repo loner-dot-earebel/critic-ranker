@@ -34,18 +34,21 @@ Blade Runner,movie,1982.0,84,"Action, Drama, Sci-Fi",
 The Shawshank Redemption,movie,1994.0,82,Drama,
 Star Wars: Episode V - The Empire Strikes Back,movie,1980.0,82,"Action, Adventure, Fantasy",
 The Matrix,movie,1999.0,73,"Action, Sci-Fi",
-Singin' To An Empty Chair,music,,86,,Ratboys
+Singin' To An Empty Chair,music,,85,,Ratboys
 URGH,music,,87,,"Mandy, Indiana"
 EXPO,music,,77,,Ulrika Spacek
 Butterfly,music,,81,,Daphni
 Move On With The Year,music,,80,,Alice Costelloe
 Laughter In Summer,music,,85,,Beverly Glenn-Copeland
+Weapons Of Beauty,music,,81,,Jay Buchanan
+Piss In The Wind,music,,66,,Joji
+The Fall-Off,music,,66,,J. Cole
 Yeah Yeah Yeah,music,,68,,Cast
 "For The First Time, Again",music,,76,,Tyler Ballgame
 Can I Get A Pack Of Camel Lights?,music,,80,,Geologist
 I Used to Go To This Bar,music,,78,,Joyce Manor
 Wormslayer,music,,78,,Kula Shaker
-Attitude Adjustment,music,,68,,Buzzcocks
+Attitude Adjustment,music,,70,,Buzzcocks
 Can Such Delightful Times Go On Forever?,music,,80,,The Soft Pink Truth
 "low clouds hang, this land is on fire",music,,79,,Tashi Dorji
 Not Here Not Gone,music,,79,,Blackwater Holylight
@@ -53,7 +56,8 @@ Kiss The Beast,music,,71,,Sébastien Tellier
 One Mississippi,music,,84,,Eric Bibb
 My Ghosts Go Ghost,music,,78,,By Storm
 When A Flower Doesn't Grow,music,,88,,Softcult
-Sunlight Echoes,music,,74,,Whitelands
+Sunlight Echoes,music,,72,,Whitelands
+Wasted On Youth,music,,84,,The Molotovs
 World's Gone Wrong,music,,82,,Lucinda Williams
 Megadeth,music,,60,,Megadeth
 How Did I Get Here?,music,,69,,Louis Tomlinson
@@ -65,6 +69,7 @@ Death In The Business Of Whaling,music,,79,,Searows
 Vacancy,music,,75,,Ari Lennox
 Sidings,music,,78,,Craven Faults
 Empty Hands,music,,71,,Poppy
+Not Like Everybody Else,music,,60,,The Damned
 Your Picture,music,,84,,The Sha La Das
 The Demise Of Planet X,music,,76,,Sleaford Mods
 Valentine,music,,80,,Courtney Marie Andrews
@@ -184,11 +189,12 @@ Return of the Obra Dinn,game,,89,"Art, Puzzle",
 Nier: Automata,game,,89,"Action, RPG",
 Path of the Midnight Sun,game,,89,"Turn-Based Strategy, RPG, Adventure",
 The Talos Principle 2: Road to Elysium,game,,89,"Adventure, Puzzle",
+Mewgenics,game,,89,,
 Horizon Zero Dawn,game,,89,"Action, Adventure, RPG",
 Diablo III: Ultimate Evil Edition,game,,89,RPG,
 Neon White,game,,89,Action,
 Cobalt Core,game,,89,"Puzzle, Strategy, Turn-Based Strategy, RPG",
-Disco Elysium: The Final Cut,game,,89,RPG,
+Tales from the Borderlands: Episode Five - The Vault of the Traveler,game,,89,Interactive Story,
 DUSK,game,,89,"Action, First-Person Shooter",
 Alan Wake 2,game,,89,"Horror, Survival, Adventure, Action",
 Freshly Frosted,game,,89,"Puzzle, Simulation, Strategy, Arcade",
@@ -208,4 +214,3 @@ Pillars of Eternity II: Deadfire,game,,89,RPG,
 Shin Megami Tensei V: Vengeance,game,,89,"Action, Adventure",
 Hi-Fi Rush,game,,89,Action,
 Mortal Kombat 11 Ultimate,game,,89,"Action, Fighting",
-Sea of Stars,game,,89,"Adventure, RPG, Turn-Based Strategy",
