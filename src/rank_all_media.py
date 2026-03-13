@@ -18,40 +18,37 @@ OUTPUT_ALL = "outputs/critics_all_media_ranked.csv"
 OUTPUT_COMEDY = "outputs/critics_comedy_humor_ranked.csv"
 
 
-def fetch_omdb(title, media_type, year_hint=None):
+def fetch_omdb(title, media_type):
+    url = "https://www.omdbapi.com/"
     params = {
         "apikey": OMDB_API_KEY,
         "t": title,
-        "type": "series" if media_type.lower() in ("tv", "series", "tv_series", "miniseries") else "movie",
-        "r": "json"
+        "type": media_type
     }
-    if year_hint:
-        params["y"] = year_hint
 
-    r = requests.get("https://www.omdbapi.com/", params=params, timeout=10)
-    data = r.json()
+    try:
+        r = requests.get(url, params=params, timeout=10)
 
-    if data.get("Response") != "True":
-    # Retry without type constraint
-        params.pop("type", None)
-        r = requests.get("https://www.omdbapi.com/", params=params, timeout=10)
-        data = r.json()
+        if r.status_code != 200:
+            print(f"OMDb HTTP error {r.status_code} for: {title}")
+            return None
 
-    if data.get("Response") != "True":
+        try:
+            data = r.json()
+        except Exception:
+            print(f"OMDb returned non-JSON for: {title}")
+            print(r.text[:300])
+            return None
+
+        if data.get("Response") != "True":
+            return None
+
+        return data
+
+    except requests.RequestException as e:
+        print(f"OMDb request failed: {e}")
         return None
 
-
-    metacritic = data.get("Metascore")
-    critic_score = int(metacritic) if metacritic not in (None, "N/A") else None
-
-
-    return {
-        "title": data.get("Title"),
-        "medium": media_type,
-        "year": data.get("Year"),
-        "critic_score": critic_score,
-        "genres": data.get("Genre", "")
-    }
 
 
 def main():
