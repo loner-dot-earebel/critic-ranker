@@ -88,7 +88,11 @@ def main():
         return
 
 # Drop entries without a critic score
+    if "critic_score" not in df.columns:
+        df["critic_score"] = None
+
     df = df.dropna(subset=["critic_score"])
+
 
     if df.empty:
         print("All rows missing Metacritic scores")
