@@ -72,7 +72,6 @@ def main():
             result = fetch_omdb(
                 normalize_title(row["title"]),
                 row["type"],
-                row.get("year_hint")
             )
    
 
